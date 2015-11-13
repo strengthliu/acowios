@@ -24,7 +24,7 @@
 
 @class ICTabBarView;
 
-@interface tabbarViewController : UIViewController<tabbarDelegate>
+@interface ICTabbarViewController : UIViewController<tabbarDelegate>
 
 @property(nonatomic,strong) ICTabBarView *tabbar;
 @property(nonatomic,strong) NSArray *arrayViewcontrollers;

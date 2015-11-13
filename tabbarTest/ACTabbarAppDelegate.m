@@ -6,17 +6,17 @@
 //  Copyright (c) 2013年 Kevin. All rights reserved.
 //
 
-#import "tabbarAppDelegate.h"
+#import "ACTabbarAppDelegate.h"
 
-#import "tabbarViewController.h"
+#import "ICTabbarViewController.h"
 
-@implementation tabbarAppDelegate
+@implementation ACTabbarAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[tabbarViewController alloc] initWithNibName:@"tabbarViewController" bundle:nil];
+    self.viewController = [[ICTabbarViewController alloc] initWithNibName:@"tabbarViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

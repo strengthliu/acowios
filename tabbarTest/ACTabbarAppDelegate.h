@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class tabbarViewController;
+@class ICTabbarViewController;
 
-@interface tabbarAppDelegate : UIResponder <UIApplicationDelegate>
+@interface ACTabbarAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) tabbarViewController *viewController;
+@property (strong, nonatomic) ICTabbarViewController *viewController;
 
 @end

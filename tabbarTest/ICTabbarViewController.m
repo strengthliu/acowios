@@ -6,16 +6,16 @@
 //  Copyright (c) 2013年 Kevin. All rights reserved.
 //
 
-#import "tabbarViewController.h"
+#import "ICTabbarViewController.h"
 #import "ICTabBarView.h"
 
 #define SELECTED_VIEW_CONTROLLER_TAG 98456345
 
-@interface tabbarViewController ()
+@interface ICTabbarViewController ()
 
 @end
 
-@implementation tabbarViewController
+@implementation ICTabbarViewController
 
 - (void)viewDidLoad
 {
