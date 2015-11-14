@@ -8,7 +8,7 @@
 
 #import "ACTabbarAppDelegate.h"
 
-#import "ICTabbarViewController.h"
+#import "ACTabbarViewController.h"
 
 @implementation ACTabbarAppDelegate
 
@@ -16,7 +16,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[ICTabbarViewController alloc] initWithNibName:@"tabbarViewController" bundle:nil];
+    self.viewController = [[ACTabbarViewController alloc] initWithNibName:@"ACTabbarViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
