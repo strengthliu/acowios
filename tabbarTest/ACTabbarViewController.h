@@ -8,25 +8,27 @@
 
 #import <UIKit/UIKit.h>
 
-#import "FirstViewController.h"
-#import "SecondViewController.h"
-#import "PlusViewController.h"
+#import "ACMessageViewController.h"
+#import "ACDiscoverViewController.h"
+#import "ACPlusViewController.h"
+#import "ACFriendsViewController.h"
+#import "ACMeViewController.h"
 
 #define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : 0)
 #define addHeight 88
 
 
-@protocol tabbarDelegate <NSObject>
+@protocol ACTabbarDelegate <NSObject>
 
 -(void)touchBtnAtIndex:(NSInteger)index;
 
 @end
 
-@class ICTabBarView;
+@class ACTabBarView;
 
-@interface ICTabbarViewController : UIViewController<tabbarDelegate>
+@interface ACTabbarViewController : UIViewController<ACTabbarDelegate>
 
-@property(nonatomic,strong) ICTabBarView *tabbar;
+@property(nonatomic,strong) ACTabBarView *tabbar;
 @property(nonatomic,strong) NSArray *arrayViewcontrollers;
 @end
 

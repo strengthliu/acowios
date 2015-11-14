@@ -6,16 +6,16 @@
 //  Copyright (c) 2013年 Kevin. All rights reserved.
 //
 
-#import "ICTabbarViewController.h"
-#import "ICTabBarView.h"
+#import "ACTabbarViewController.h"
+#import "ACTabBarView.h"
 
 #define SELECTED_VIEW_CONTROLLER_TAG 98456345
 
-@interface ICTabbarViewController ()
+@interface ACTabbarViewController ()
 
 @end
 
-@implementation ICTabbarViewController
+@implementation ACTabbarViewController
 
 - (void)viewDidLoad
 {
@@ -25,7 +25,7 @@
     if (iPhone5) {
         orginHeight = self.view.frame.size.height- 60 + addHeight;
     }
-    _tabbar = [[ICTabBarView alloc]initWithFrame:CGRectMake(0,  orginHeight, 320, 60)];
+    _tabbar = [[ACTabBarView alloc]initWithFrame:CGRectMake(0,  orginHeight, 320, 60)];
     _tabbar.delegate = self;
     [self.view addSubview:_tabbar];
     
@@ -65,15 +65,22 @@
 {
     NSArray* tabBarItems = nil;
     
-    FirstViewController *first = [[FirstViewController alloc]initWithNibName:@"FirstViewController" bundle:nil];
+    ACMessageViewController *message = [[ACMessageViewController alloc]initWithNibName:@"ACMessageViewController" bundle:nil];
     
-    SecondViewController *second = [[SecondViewController alloc]init];
+    ACDiscoverViewController *discover = [[ACDiscoverViewController alloc]initWithNibName:@"ACDiscoverViewController" bundle:nil];
     
-    PlusViewController *plus = [[PlusViewController alloc]init];
+    ACPlusViewController *plus = [[ACPlusViewController alloc]init];
+    
+    ACFriendsViewController *friends = [[ACDiscoverViewController alloc]initWithNibName:@"ACFriendsViewController" bundle:nil];
+
+    ACMeViewController *me = [[ACDiscoverViewController alloc]initWithNibName:@"ACMeViewController" bundle:nil];
+
     tabBarItems = [NSArray arrayWithObjects:
-                   [NSDictionary dictionaryWithObjectsAndKeys:@"tabicon_home", @"image",@"tabicon_home", @"image_locked", first, @"viewController",@"主页",@"title", nil],
-                   [NSDictionary dictionaryWithObjectsAndKeys:@"tabicon_home", @"image",@"tabicon_home", @"image_locked", second, @"viewController",@"主页",@"title", nil],
+                   [NSDictionary dictionaryWithObjectsAndKeys:@"tabicon_home", @"image",@"tabicon_home", @"image_locked", message, @"viewController",@"主页",@"title", nil],
+                   [NSDictionary dictionaryWithObjectsAndKeys:@"tabicon_home", @"image",@"tabicon_home", @"image_locked", discover, @"viewController",@"主页",@"title", nil],
                    [NSDictionary dictionaryWithObjectsAndKeys:@"tabicon_home", @"image",@"tabicon_home", @"image_locked", plus, @"viewController",@"主页",@"title", nil],
+                   [NSDictionary dictionaryWithObjectsAndKeys:@"tabicon_home", @"image",@"tabicon_home", @"image_locked", friends, @"viewController",@"主页",@"title", nil],
+                   [NSDictionary dictionaryWithObjectsAndKeys:@"tabicon_home", @"image",@"tabicon_home", @"image_locked", me, @"viewController",@"主页",@"title", nil],
 
                    nil
                    ];

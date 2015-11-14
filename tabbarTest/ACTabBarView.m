@@ -6,11 +6,11 @@
 //  Copyright (c) 2013年 Kevin. All rights reserved.
 //
 
-#import "ICTabBarView.h"
+#import "ACTabBarView.h"
 
 
 
-@implementation ICTabBarView
+@implementation ACTabBarView
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -89,6 +89,7 @@
 {
     [self.delegate touchBtnAtIndex:2];
 }
+
 -(void)btn1Click:(id)sender
 {
         
@@ -109,11 +110,17 @@
             break;
         }
         case 103:
+        {
             [_tabbarView setImage:[UIImage imageNamed:@"tabbar_3"]];
+            [self.delegate touchBtnAtIndex:3];
             break;
+        }
         case 104:
+        {
             [_tabbarView setImage:[UIImage imageNamed:@"tabbar_4"]];
+            [self.delegate touchBtnAtIndex:4];
             break;
+        }
         default:
             break;
     }

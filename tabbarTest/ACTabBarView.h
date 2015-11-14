@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "tabbarViewController.h"
+#import "ACTabbarViewController.h"
 
-@interface ICTabBarView : UIView
+@interface ACTabBarView : UIView
 
 @property(nonatomic,strong) UIImageView *tabbarView;
 @property(nonatomic,strong) UIImageView *tabbarViewCenter;
@@ -20,6 +20,6 @@
 @property(nonatomic,strong) UIButton *button_4;
 @property(nonatomic,strong) UIButton *button_center;
 
-@property(nonatomic,weak) id<tabbarDelegate> delegate;
+@property(nonatomic,weak) id<ACTabbarDelegate> delegate;
 
 @end

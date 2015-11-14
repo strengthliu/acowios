@@ -6,13 +6,13 @@
 //  Copyright (c) 2013年 Kevin. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "ACMessageViewController.h"
 
-@interface FirstViewController ()
+@interface ACMessageViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation ACMessageViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

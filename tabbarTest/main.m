@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "tabbarAppDelegate.h"
+#import "ACTabbarAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([tabbarAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([ACTabbarAppDelegate class]));
     }
 }

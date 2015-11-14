@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  SecondViewController.h
 //  tabbarTest
 //
 //  Created by Kevin Lee on 13-5-6.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface ACDiscoverViewController : UIViewController
 
 @end

@@ -6,13 +6,13 @@
 //  Copyright (c) 2013年 Kevin. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "ACDiscoverViewController.h"
 
-@interface SecondViewController ()
+@interface ACDiscoverViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation ACDiscoverViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

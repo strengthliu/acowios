@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlusViewController : UIViewController
+@interface ACPlusViewController : UIViewController
 
 @end

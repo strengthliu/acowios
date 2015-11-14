@@ -12,13 +12,12 @@
 		0AABD6481737925F009E541D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AABD6471737925F009E541D /* CoreGraphics.framework */; };
 		0AABD64E1737925F009E541D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD64C1737925F009E541D /* InfoPlist.strings */; };
 		0AABD6501737925F009E541D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AABD64F1737925F009E541D /* main.m */; };
-		0AABD6541737925F009E541D /* tabbarAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AABD6531737925F009E541D /* tabbarAppDelegate.m */; };
+		0AABD6541737925F009E541D /* ACTabbarAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AABD6531737925F009E541D /* ACTabbarAppDelegate.m */; };
 		0AABD6561737925F009E541D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD6551737925F009E541D /* Default.png */; };
 		0AABD6581737925F009E541D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD6571737925F009E541D /* Default@2x.png */; };
 		0AABD65A1737925F009E541D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD6591737925F009E541D /* Default-568h@2x.png */; };
-		0AABD65D1737925F009E541D /* tabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AABD65C1737925F009E541D /* tabbarViewController.m */; };
-		0AABD6601737925F009E541D /* tabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD65E1737925F009E541D /* tabbarViewController.xib */; };
-		0AABD66817379315009E541D /* ICTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AABD66717379315009E541D /* ICTabBarView.m */; };
+		0AABD65D1737925F009E541D /* ACTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AABD65C1737925F009E541D /* ACTabbarViewController.m */; };
+		0AABD66817379315009E541D /* ACTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AABD66717379315009E541D /* ACTabBarView.m */; };
 		0AABD6761737949E009E541D /* tabbar_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD66A1737949E009E541D /* tabbar_0.png */; };
 		0AABD6771737949E009E541D /* tabbar_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD66B1737949E009E541D /* tabbar_0@2x.png */; };
 		0AABD6781737949E009E541D /* tabbar_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD66C1737949E009E541D /* tabbar_1.png */; };
@@ -31,14 +30,21 @@
 		0AABD67F1737949E009E541D /* tabbar_mainbtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD6731737949E009E541D /* tabbar_mainbtn@2x.png */; };
 		0AABD6801737949E009E541D /* tabbar_mainbtn_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD6741737949E009E541D /* tabbar_mainbtn_bg.png */; };
 		0AABD6811737949E009E541D /* tabbar_mainbtn_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD6751737949E009E541D /* tabbar_mainbtn_bg@2x.png */; };
-		0AABD6851737B034009E541D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AABD6831737B034009E541D /* FirstViewController.m */; };
-		0AABD6861737B034009E541D /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD6841737B034009E541D /* FirstViewController.xib */; };
-		0AABD68A1737B04C009E541D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AABD6881737B04C009E541D /* SecondViewController.m */; };
-		0AABD68B1737B04C009E541D /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD6891737B04C009E541D /* SecondViewController.xib */; };
-		5F727DD41BF58F2A001A051C /* PlusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F727DD21BF58F2A001A051C /* PlusViewController.m */; };
-		5F727DD51BF58F2A001A051C /* PlusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F727DD31BF58F2A001A051C /* PlusViewController.xib */; };
-		5F727DDB1BF5A170001A051C /* libSCRecorder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F727DDA1BF5A170001A051C /* libSCRecorder.a */; };
-		5FED9E761BDCEA2400BEAC0F /* table.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FED9E751BDCEA2400BEAC0F /* table.xib */; };
+		0AABD6851737B034009E541D /* ACMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AABD6831737B034009E541D /* ACMessageViewController.m */; };
+		0AABD6861737B034009E541D /* ACMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD6841737B034009E541D /* ACMessageViewController.xib */; };
+		0AABD68A1737B04C009E541D /* ACDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AABD6881737B04C009E541D /* ACDiscoverViewController.m */; };
+		0AABD68B1737B04C009E541D /* ACDiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AABD6891737B04C009E541D /* ACDiscoverViewController.xib */; };
+		5F2F6C251BF5D29B0083F0B0 /* SCRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F727EBD1BF5CD82001A051C /* SCRecorder.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		5F4DF0FE1BF5E6FD00E1E6D8 /* SCRecorder.framework in Resources */ = {isa = PBXBuildFile; fileRef = 5F727EBD1BF5CD82001A051C /* SCRecorder.framework */; };
+		5F727DD41BF58F2A001A051C /* ACPlusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F727DD21BF58F2A001A051C /* ACPlusViewController.m */; };
+		5F727DD51BF58F2A001A051C /* ACPlusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F727DD31BF58F2A001A051C /* ACPlusViewController.xib */; };
+		5FA8AC841BF6F963002D887D /* ACTabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8AC821BF6F963002D887D /* ACTabbarViewController.xib */; };
+		5FA8AC8A1BF705A8002D887D /* ACMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8AC881BF705A8002D887D /* ACMeViewController.m */; };
+		5FA8AC8B1BF705A8002D887D /* ACMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8AC891BF705A8002D887D /* ACMeViewController.xib */; };
+		5FA8AC8F1BF70659002D887D /* MyCharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8AC8D1BF70659002D887D /* MyCharacterViewController.m */; };
+		5FA8AC901BF70659002D887D /* MyCharacterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8AC8E1BF70659002D887D /* MyCharacterViewController.xib */; };
+		5FA8AC991BF72139002D887D /* ACFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8AC971BF72139002D887D /* ACFriendsViewController.m */; };
+		5FA8AC9A1BF72139002D887D /* ACFriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8AC981BF72139002D887D /* ACFriendsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,16 +56,15 @@
 		0AABD64D1737925F009E541D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0AABD64F1737925F009E541D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0AABD6511737925F009E541D /* tabbarTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tabbarTest-Prefix.pch"; sourceTree = "<group>"; };
-		0AABD6521737925F009E541D /* tabbarAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tabbarAppDelegate.h; sourceTree = "<group>"; };
-		0AABD6531737925F009E541D /* tabbarAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tabbarAppDelegate.m; sourceTree = "<group>"; };
+		0AABD6521737925F009E541D /* ACTabbarAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACTabbarAppDelegate.h; sourceTree = "<group>"; };
+		0AABD6531737925F009E541D /* ACTabbarAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACTabbarAppDelegate.m; sourceTree = "<group>"; };
 		0AABD6551737925F009E541D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		0AABD6571737925F009E541D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0AABD6591737925F009E541D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		0AABD65B1737925F009E541D /* tabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tabbarViewController.h; sourceTree = "<group>"; };
-		0AABD65C1737925F009E541D /* tabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tabbarViewController.m; sourceTree = "<group>"; };
-		0AABD65F1737925F009E541D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/tabbarViewController.xib; sourceTree = "<group>"; };
-		0AABD66617379315009E541D /* ICTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICTabBarView.h; sourceTree = "<group>"; };
-		0AABD66717379315009E541D /* ICTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICTabBarView.m; sourceTree = "<group>"; };
+		0AABD65B1737925F009E541D /* ACTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACTabbarViewController.h; sourceTree = "<group>"; };
+		0AABD65C1737925F009E541D /* ACTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACTabbarViewController.m; sourceTree = "<group>"; };
+		0AABD66617379315009E541D /* ACTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTabBarView.h; sourceTree = "<group>"; };
+		0AABD66717379315009E541D /* ACTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACTabBarView.m; sourceTree = "<group>"; };
 		0AABD66A1737949E009E541D /* tabbar_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_0.png; sourceTree = "<group>"; };
 		0AABD66B1737949E009E541D /* tabbar_0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_0@2x.png"; sourceTree = "<group>"; };
 		0AABD66C1737949E009E541D /* tabbar_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_1.png; sourceTree = "<group>"; };
@@ -72,19 +77,26 @@
 		0AABD6731737949E009E541D /* tabbar_mainbtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_mainbtn@2x.png"; sourceTree = "<group>"; };
 		0AABD6741737949E009E541D /* tabbar_mainbtn_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_mainbtn_bg.png; sourceTree = "<group>"; };
 		0AABD6751737949E009E541D /* tabbar_mainbtn_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_mainbtn_bg@2x.png"; sourceTree = "<group>"; };
-		0AABD6821737B034009E541D /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		0AABD6831737B034009E541D /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		0AABD6841737B034009E541D /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
-		0AABD6871737B04C009E541D /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		0AABD6881737B04C009E541D /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		0AABD6891737B04C009E541D /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
-		5F727DD11BF58F2A001A051C /* PlusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlusViewController.h; path = ../PlusViewController.h; sourceTree = "<group>"; };
-		5F727DD21BF58F2A001A051C /* PlusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlusViewController.m; path = ../PlusViewController.m; sourceTree = "<group>"; };
-		5F727DD31BF58F2A001A051C /* PlusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlusViewController.xib; path = ../PlusViewController.xib; sourceTree = "<group>"; };
-		5F727DD61BF59CFD001A051C /* SCRecorder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCRecorder.framework; path = "../../project/tabbarTest/LibrarySCRecorder/build/Debug-iphoneos/SCRecorder.framework"; sourceTree = "<group>"; };
-		5F727DD81BF59F95001A051C /* SCRecorder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCRecorder.framework; path = "../../Library/Developer/Xcode/DerivedData/tabbarTest-dhcfmffnufertpbdxegkczclhmqx/Build/Products/Debug-iphoneos/SCRecorder.framework"; sourceTree = "<group>"; };
-		5F727DDA1BF5A170001A051C /* libSCRecorder.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSCRecorder.a; path = "../../Library/Developer/Xcode/DerivedData/tabbarTest-dhcfmffnufertpbdxegkczclhmqx/Build/Products/Debug-iphoneos/libSCRecorder.a"; sourceTree = "<group>"; };
-		5FED9E751BDCEA2400BEAC0F /* table.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = table.xib; sourceTree = "<group>"; };
+		0AABD6821737B034009E541D /* ACMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMessageViewController.h; sourceTree = "<group>"; };
+		0AABD6831737B034009E541D /* ACMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACMessageViewController.m; sourceTree = "<group>"; };
+		0AABD6841737B034009E541D /* ACMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACMessageViewController.xib; sourceTree = "<group>"; };
+		0AABD6871737B04C009E541D /* ACDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDiscoverViewController.h; sourceTree = "<group>"; };
+		0AABD6881737B04C009E541D /* ACDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACDiscoverViewController.m; sourceTree = "<group>"; };
+		0AABD6891737B04C009E541D /* ACDiscoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACDiscoverViewController.xib; sourceTree = "<group>"; };
+		5F727DD11BF58F2A001A051C /* ACPlusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACPlusViewController.h; path = ../ACPlusViewController.h; sourceTree = "<group>"; };
+		5F727DD21BF58F2A001A051C /* ACPlusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACPlusViewController.m; path = ../ACPlusViewController.m; sourceTree = "<group>"; };
+		5F727DD31BF58F2A001A051C /* ACPlusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ACPlusViewController.xib; path = ../ACPlusViewController.xib; sourceTree = "<group>"; };
+		5F727EBD1BF5CD82001A051C /* SCRecorder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCRecorder.framework; path = "../../Library/Developer/Xcode/DerivedData/acaoios-dmopsijfrorthyamvbievbuoqcel/Build/Products/Debug-iphoneos/SCRecorder.framework"; sourceTree = "<group>"; };
+		5FA8AC831BF6F963002D887D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ACTabbarViewController.xib; sourceTree = "<group>"; };
+		5FA8AC871BF705A8002D887D /* ACMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMeViewController.h; sourceTree = "<group>"; };
+		5FA8AC881BF705A8002D887D /* ACMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACMeViewController.m; sourceTree = "<group>"; };
+		5FA8AC891BF705A8002D887D /* ACMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACMeViewController.xib; sourceTree = "<group>"; };
+		5FA8AC8C1BF70659002D887D /* MyCharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCharacterViewController.h; sourceTree = "<group>"; };
+		5FA8AC8D1BF70659002D887D /* MyCharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCharacterViewController.m; sourceTree = "<group>"; };
+		5FA8AC8E1BF70659002D887D /* MyCharacterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCharacterViewController.xib; sourceTree = "<group>"; };
+		5FA8AC961BF72139002D887D /* ACFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACFriendsViewController.h; sourceTree = "<group>"; };
+		5FA8AC971BF72139002D887D /* ACFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACFriendsViewController.m; sourceTree = "<group>"; };
+		5FA8AC981BF72139002D887D /* ACFriendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACFriendsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F727DDB1BF5A170001A051C /* libSCRecorder.a in Frameworks */,
+				5F2F6C251BF5D29B0083F0B0 /* SCRecorder.framework in Frameworks */,
 				0AABD6441737925F009E541D /* UIKit.framework in Frameworks */,
 				0AABD6461737925F009E541D /* Foundation.framework in Frameworks */,
 				0AABD6481737925F009E541D /* CoreGraphics.framework in Frameworks */,
@@ -122,9 +134,7 @@
 		0AABD6421737925F009E541D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5F727DDA1BF5A170001A051C /* libSCRecorder.a */,
-				5F727DD81BF59F95001A051C /* SCRecorder.framework */,
-				5F727DD61BF59CFD001A051C /* SCRecorder.framework */,
+				5F727EBD1BF5CD82001A051C /* SCRecorder.framework */,
 				0AABD6431737925F009E541D /* UIKit.framework */,
 				0AABD6451737925F009E541D /* Foundation.framework */,
 				0AABD6471737925F009E541D /* CoreGraphics.framework */,
@@ -135,23 +145,20 @@
 		0AABD6491737925F009E541D /* tabbarTest */ = {
 			isa = PBXGroup;
 			children = (
+				5FA8AC951BF7211D002D887D /* friendsCV */,
+				5FA8AC941BF7205A002D887D /* discoverVC */,
+				5FA8AC851BF70556002D887D /* meVC */,
+				5F727EB21BF5C9BC001A051C /* messageVC */,
 				5F727DDC1BF5A22B001A051C /* plusVC */,
+				0AABD6521737925F009E541D /* ACTabbarAppDelegate.h */,
+				0AABD6531737925F009E541D /* ACTabbarAppDelegate.m */,
+				0AABD65B1737925F009E541D /* ACTabbarViewController.h */,
+				0AABD65C1737925F009E541D /* ACTabbarViewController.m */,
+				5FA8AC821BF6F963002D887D /* ACTabbarViewController.xib */,
+				0AABD66617379315009E541D /* ACTabBarView.h */,
+				0AABD66717379315009E541D /* ACTabBarView.m */,
 				0AABD6691737949E009E541D /* Image */,
-				0AABD6521737925F009E541D /* tabbarAppDelegate.h */,
-				0AABD6531737925F009E541D /* tabbarAppDelegate.m */,
-				0AABD65B1737925F009E541D /* tabbarViewController.h */,
-				0AABD65C1737925F009E541D /* tabbarViewController.m */,
-				0AABD65E1737925F009E541D /* tabbarViewController.xib */,
 				0AABD64A1737925F009E541D /* Supporting Files */,
-				0AABD66617379315009E541D /* ICTabBarView.h */,
-				0AABD66717379315009E541D /* ICTabBarView.m */,
-				0AABD6821737B034009E541D /* FirstViewController.h */,
-				0AABD6831737B034009E541D /* FirstViewController.m */,
-				0AABD6841737B034009E541D /* FirstViewController.xib */,
-				5FED9E751BDCEA2400BEAC0F /* table.xib */,
-				0AABD6871737B04C009E541D /* SecondViewController.h */,
-				0AABD6881737B04C009E541D /* SecondViewController.m */,
-				0AABD6891737B04C009E541D /* SecondViewController.xib */,
 			);
 			path = tabbarTest;
 			sourceTree = "<group>";
@@ -192,11 +199,96 @@
 		5F727DDC1BF5A22B001A051C /* plusVC */ = {
 			isa = PBXGroup;
 			children = (
-				5F727DD11BF58F2A001A051C /* PlusViewController.h */,
-				5F727DD21BF58F2A001A051C /* PlusViewController.m */,
-				5F727DD31BF58F2A001A051C /* PlusViewController.xib */,
+				5F727EA71BF5C3A5001A051C /* recorderVC */,
+				5F727DD11BF58F2A001A051C /* ACPlusViewController.h */,
+				5F727DD21BF58F2A001A051C /* ACPlusViewController.m */,
+				5F727DD31BF58F2A001A051C /* ACPlusViewController.xib */,
 			);
 			path = plusVC;
+			sourceTree = "<group>";
+		};
+		5F727EA71BF5C3A5001A051C /* recorderVC */ = {
+			isa = PBXGroup;
+			children = (
+				5F727EAE1BF5C3F9001A051C /* touch */,
+			);
+			name = recorderVC;
+			path = ../recorderVC;
+			sourceTree = "<group>";
+		};
+		5F727EAE1BF5C3F9001A051C /* touch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = touch;
+			path = ../touch;
+			sourceTree = "<group>";
+		};
+		5F727EB21BF5C9BC001A051C /* messageVC */ = {
+			isa = PBXGroup;
+			children = (
+				0AABD6821737B034009E541D /* ACMessageViewController.h */,
+				0AABD6831737B034009E541D /* ACMessageViewController.m */,
+				0AABD6841737B034009E541D /* ACMessageViewController.xib */,
+			);
+			name = messageVC;
+			sourceTree = "<group>";
+		};
+		5FA8AC851BF70556002D887D /* meVC */ = {
+			isa = PBXGroup;
+			children = (
+				5FA8AC861BF70562002D887D /* myProfileVC */,
+				5FA8AC871BF705A8002D887D /* ACMeViewController.h */,
+				5FA8AC881BF705A8002D887D /* ACMeViewController.m */,
+				5FA8AC891BF705A8002D887D /* ACMeViewController.xib */,
+			);
+			name = meVC;
+			sourceTree = "<group>";
+		};
+		5FA8AC861BF70562002D887D /* myProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				5FA8AC911BF70C89002D887D /* recorderVC */,
+				5FA8AC8C1BF70659002D887D /* MyCharacterViewController.h */,
+				5FA8AC8D1BF70659002D887D /* MyCharacterViewController.m */,
+				5FA8AC8E1BF70659002D887D /* MyCharacterViewController.xib */,
+			);
+			name = myProfileVC;
+			sourceTree = "<group>";
+		};
+		5FA8AC911BF70C89002D887D /* recorderVC */ = {
+			isa = PBXGroup;
+			children = (
+				5FA8AC921BF70C94002D887D /* touch */,
+			);
+			name = recorderVC;
+			sourceTree = "<group>";
+		};
+		5FA8AC921BF70C94002D887D /* touch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = touch;
+			sourceTree = "<group>";
+		};
+		5FA8AC941BF7205A002D887D /* discoverVC */ = {
+			isa = PBXGroup;
+			children = (
+				0AABD6871737B04C009E541D /* ACDiscoverViewController.h */,
+				0AABD6881737B04C009E541D /* ACDiscoverViewController.m */,
+				0AABD6891737B04C009E541D /* ACDiscoverViewController.xib */,
+			);
+			name = discoverVC;
+			sourceTree = "<group>";
+		};
+		5FA8AC951BF7211D002D887D /* friendsCV */ = {
+			isa = PBXGroup;
+			children = (
+				5FA8AC961BF72139002D887D /* ACFriendsViewController.h */,
+				5FA8AC971BF72139002D887D /* ACFriendsViewController.m */,
+				5FA8AC981BF72139002D887D /* ACFriendsViewController.xib */,
+			);
+			name = friendsCV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,27 +343,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F4DF0FE1BF5E6FD00E1E6D8 /* SCRecorder.framework in Resources */,
 				0AABD64E1737925F009E541D /* InfoPlist.strings in Resources */,
+				5FA8AC8B1BF705A8002D887D /* ACMeViewController.xib in Resources */,
 				0AABD6561737925F009E541D /* Default.png in Resources */,
+				5FA8AC9A1BF72139002D887D /* ACFriendsViewController.xib in Resources */,
+				5FA8AC841BF6F963002D887D /* ACTabbarViewController.xib in Resources */,
 				0AABD6581737925F009E541D /* Default@2x.png in Resources */,
 				0AABD65A1737925F009E541D /* Default-568h@2x.png in Resources */,
-				0AABD6601737925F009E541D /* tabbarViewController.xib in Resources */,
 				0AABD6761737949E009E541D /* tabbar_0.png in Resources */,
-				5F727DD51BF58F2A001A051C /* PlusViewController.xib in Resources */,
+				5F727DD51BF58F2A001A051C /* ACPlusViewController.xib in Resources */,
 				0AABD6771737949E009E541D /* tabbar_0@2x.png in Resources */,
 				0AABD6781737949E009E541D /* tabbar_1.png in Resources */,
 				0AABD6791737949E009E541D /* tabbar_1@2x.png in Resources */,
 				0AABD67A1737949E009E541D /* tabbar_3.png in Resources */,
-				5FED9E761BDCEA2400BEAC0F /* table.xib in Resources */,
 				0AABD67B1737949E009E541D /* tabbar_3@2x.png in Resources */,
 				0AABD67C1737949E009E541D /* tabbar_4.png in Resources */,
 				0AABD67D1737949E009E541D /* tabbar_4@2x.png in Resources */,
 				0AABD67E1737949E009E541D /* tabbar_mainbtn.png in Resources */,
+				5FA8AC901BF70659002D887D /* MyCharacterViewController.xib in Resources */,
 				0AABD67F1737949E009E541D /* tabbar_mainbtn@2x.png in Resources */,
 				0AABD6801737949E009E541D /* tabbar_mainbtn_bg.png in Resources */,
 				0AABD6811737949E009E541D /* tabbar_mainbtn_bg@2x.png in Resources */,
-				0AABD6861737B034009E541D /* FirstViewController.xib in Resources */,
-				0AABD68B1737B04C009E541D /* SecondViewController.xib in Resources */,
+				0AABD6861737B034009E541D /* ACMessageViewController.xib in Resources */,
+				0AABD68B1737B04C009E541D /* ACDiscoverViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +378,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AABD6501737925F009E541D /* main.m in Sources */,
-				5F727DD41BF58F2A001A051C /* PlusViewController.m in Sources */,
-				0AABD6541737925F009E541D /* tabbarAppDelegate.m in Sources */,
-				0AABD65D1737925F009E541D /* tabbarViewController.m in Sources */,
-				0AABD66817379315009E541D /* ICTabBarView.m in Sources */,
-				0AABD6851737B034009E541D /* FirstViewController.m in Sources */,
-				0AABD68A1737B04C009E541D /* SecondViewController.m in Sources */,
+				5F727DD41BF58F2A001A051C /* ACPlusViewController.m in Sources */,
+				5FA8AC991BF72139002D887D /* ACFriendsViewController.m in Sources */,
+				0AABD6541737925F009E541D /* ACTabbarAppDelegate.m in Sources */,
+				0AABD65D1737925F009E541D /* ACTabbarViewController.m in Sources */,
+				5FA8AC8F1BF70659002D887D /* MyCharacterViewController.m in Sources */,
+				0AABD66817379315009E541D /* ACTabBarView.m in Sources */,
+				0AABD6851737B034009E541D /* ACMessageViewController.m in Sources */,
+				5FA8AC8A1BF705A8002D887D /* ACMeViewController.m in Sources */,
+				0AABD68A1737B04C009E541D /* ACDiscoverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,12 +401,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		0AABD65E1737925F009E541D /* tabbarViewController.xib */ = {
+		5FA8AC821BF6F963002D887D /* ACTabbarViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0AABD65F1737925F009E541D /* en */,
+				5FA8AC831BF6F963002D887D /* en */,
 			);
-			name = tabbarViewController.xib;
+			name = ACTabbarViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -339,7 +437,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -363,7 +461,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -376,7 +474,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tabbarTest/tabbarTest-Prefix.pch";
 				INFOPLIST_FILE = "tabbarTest/tabbarTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.tabbarTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -388,7 +487,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tabbarTest/tabbarTest-Prefix.pch";
 				INFOPLIST_FILE = "tabbarTest/tabbarTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.tabbarTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
