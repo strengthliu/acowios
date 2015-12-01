@@ -39,23 +39,42 @@
     // Dispose of any resources that can be recreated.
 }
 
+/**
+ *  tab按钮点击事件。
+ *
+ *  @param index <#index description#>
+ */
 -(void)touchBtnAtIndex:(NSInteger)index
 {
+//    self.view.backgroundColor = [UIColor redColor];
+    // 根据view的tab，取出view实例
     UIView* currentView = [self.view viewWithTag:SELECTED_VIEW_CONTROLLER_TAG];
-    [currentView removeFromSuperview];
+//    currentView.backgroundColor = [UIColor cyanColor];
     
+//    NSLog(@"self.view: %p", self.view);
+//    NSLog(@"currentView: %p", currentView);
 
+    if(index !=2)// 如果不是plus，当前视图移出父视图。因为plusView是覆盖在最上面的，移走后，要显示移入前的视图，所以不能把原视图移出。
+        [currentView removeFromSuperview];
+//    NSLog(@"self.view: %p", self.view);
+    
+    // 根据点击按钮的index，从视图组中，取出对应的视图数据
     NSDictionary* data = [_arrayViewcontrollers objectAtIndex:index];
     
+    // 取出对应的视图实例
     UIViewController *viewController = data[@"viewController"];
+    // 修改将要显示视图的tag
     viewController.view.tag = SELECTED_VIEW_CONTROLLER_TAG;
+    
+    // 如果点击的是+
     if(index == 2){
+        // 设定视图frame的大小
         viewController.view.frame = CGRectMake(0,0,self.view.frame.size.width, self.view.frame.size.height);
+        // 插入
         [self.view insertSubview:viewController.view aboveSubview:_tabbar];
         
     } else {
     viewController.view.frame = CGRectMake(0,0,self.view.frame.size.width, self.view.frame.size.height- 50);
-    
     [self.view insertSubview:viewController.view belowSubview:_tabbar];
     }
 
@@ -66,14 +85,19 @@
     NSArray* tabBarItems = nil;
     
     ACMessageViewController *message = [[ACMessageViewController alloc]initWithNibName:@"ACMessageViewController" bundle:nil];
+    message.view.backgroundColor = [UIColor redColor];
     
     ACDiscoverViewController *discover = [[ACDiscoverViewController alloc]initWithNibName:@"ACDiscoverViewController" bundle:nil];
+    discover.view.backgroundColor = [UIColor greenColor];
     
-    ACPlusViewController *plus = [[ACPlusViewController alloc]init];
+    ACPlusViewController *plus = [[ACPlusViewController alloc]initWithNibName:@"ACPlusViewController" bundle:nil];
+    plus.view.backgroundColor = [UIColor grayColor];
     
-    ACFriendsViewController *friends = [[ACDiscoverViewController alloc]initWithNibName:@"ACFriendsViewController" bundle:nil];
-
-    ACMeViewController *me = [[ACDiscoverViewController alloc]initWithNibName:@"ACMeViewController" bundle:nil];
+    ACFriendsViewController *friends = [[ACFriendsViewController alloc]initWithNibName:@"ACFriendsViewController" bundle:nil];
+    friends.view.backgroundColor = [UIColor blueColor];
+    
+    ACMeViewController *me = [[ACMeViewController alloc]initWithNibName:@"ACMeViewController" bundle:nil];
+    me.view.backgroundColor = [UIColor purpleColor];
 
     tabBarItems = [NSArray arrayWithObjects:
                    [NSDictionary dictionaryWithObjectsAndKeys:@"tabicon_home", @"image",@"tabicon_home", @"image_locked", message, @"viewController",@"主页",@"title", nil],

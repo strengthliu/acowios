@@ -7,13 +7,26 @@
 //
 
 #import "ACMeViewController.h"
+#import "ACMyCharacterViewController.h"
 
-@interface ACMeViewController ()
+@interface ACMeViewController (){
+    SCRecorder *_screcorder;
+}
 
 
 @end
 
+ACMyCharacterViewController *meView;
 @implementation ACMeViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -38,5 +51,14 @@
 
 - (IBAction)configButtonClicked:(UIButton *)sender {
     NSLog(@"click button in Me.");
+    meView = [[ACMyCharacterViewController alloc] initWithNibName:@"ACMyCharacterViewController" bundle:nil];
+    meView.view.frame = CGRectMake(0,0,self.view.frame.size.width, self.view.frame.size.height+50);
+
+//    [meView presentedViewController];
+    [self.view addSubview:meView.view];
+
 }
+
+
+
 @end

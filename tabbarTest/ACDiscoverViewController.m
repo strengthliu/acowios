@@ -35,4 +35,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)test:(UIButton *)sender {
+    NSLog(@"test button in discover.");
+}
 @end

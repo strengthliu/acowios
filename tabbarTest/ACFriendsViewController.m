@@ -34,4 +34,7 @@
 }
 */
 
+- (IBAction)test:(UIButton *)sender {
+    NSLog(@"test in friends");
+}
 @end

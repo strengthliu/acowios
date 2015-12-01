@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ACViewController.h"
 
-@interface ACFriendsViewController : UIViewController
+@interface ACFriendsViewController : ACViewController
 
+- (IBAction)test:(UIButton *)sender;
 @end

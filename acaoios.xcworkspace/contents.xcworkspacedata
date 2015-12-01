@@ -5,6 +5,9 @@
       location = "group:ACowIOS/../LibrarySCRecorder/SCRecorder.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:tabbarTest.xcodeproj">
+      location = "group:/Users/qiang/project/acowios/actest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

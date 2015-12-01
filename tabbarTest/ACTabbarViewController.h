@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ACViewController.h"
 
 #import "ACMessageViewController.h"
 #import "ACDiscoverViewController.h"
@@ -26,7 +27,7 @@
 
 @class ACTabBarView;
 
-@interface ACTabbarViewController : UIViewController<ACTabbarDelegate>
+@interface ACTabbarViewController : ACViewController<ACTabbarDelegate>
 
 @property(nonatomic,strong) ACTabBarView *tabbar;
 @property(nonatomic,strong) NSArray *arrayViewcontrollers;

@@ -17,6 +17,15 @@
 
 @implementation ACPlusViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -38,9 +47,22 @@
 }
 */
 
+// 点结束，返回到message页面。
 - (IBAction)finishSession:(id)sender {
-    UIView* currentView = [self.view viewWithTag:SELECTED_VIEW_CONTROLLER_TAG];
-    [currentView removeFromSuperview];
+    NSLog(@"plusvc self.view: %p", self.view);
+
+    UIView* currentView = [self.view.superview viewWithTag:SELECTED_VIEW_CONTROLLER_TAG];
+
+//    [currentView removeFromSuperview];
+//    [sender.superview remove:sender];
+//    [self.view.superview removeFromSuperview];
+    [self.view removeFromSuperview];
+    // 这里
+//    UIView* currentView = [self.view viewWithTag:SELECTED_VIEW_CONTROLLER_TAG];
+//    [currentView removeFromSuperview];
     
+}
+- (IBAction)test:(UIButton *)sender {
+    NSLog(@"test in plus");
 }
 @end

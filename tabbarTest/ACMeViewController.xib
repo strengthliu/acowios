@@ -23,7 +23,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDB-42-GfV">
-                    <rect key="frame" x="38" y="135" width="46" height="30"/>
+                    <rect key="frame" x="33" y="77" width="46" height="30"/>
                     <animations/>
                     <state key="normal" title="Button"/>
                     <connections>
