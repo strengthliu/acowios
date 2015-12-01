@@ -138,6 +138,15 @@
 		5FD219D81C0C9E2C0038F4CA /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD219C31C0C9E2C0038F4CA /* UIScrollView+MJExtension.m */; };
 		5FD219D91C0C9E2C0038F4CA /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD219C51C0C9E2C0038F4CA /* UIScrollView+MJRefresh.m */; };
 		5FD219DA1C0C9E2C0038F4CA /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD219C71C0C9E2C0038F4CA /* UIView+MJExtension.m */; };
+		5FD219F91C0D68440038F4CA /* ACCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD219E41C0D68440038F4CA /* ACCamera.cpp */; };
+		5FD219FA1C0D68440038F4CA /* ACException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD219E71C0D68440038F4CA /* ACException.cpp */; };
+		5FD219FB1C0D68440038F4CA /* ACGradient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD219E91C0D68440038F4CA /* ACGradient.cpp */; };
+		5FD219FC1C0D68440038F4CA /* ACGradientTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD219EB1C0D68440038F4CA /* ACGradientTest.cpp */; };
+		5FD219FD1C0D68440038F4CA /* ACShadow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD219EC1C0D68440038F4CA /* ACShadow.cpp */; };
+		5FD219FE1C0D68440038F4CA /* ACShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD219EE1C0D68440038F4CA /* ACShape.cpp */; };
+		5FD219FF1C0D68440038F4CA /* ACShapeFeature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD219F01C0D68440038F4CA /* ACShapeFeature.cpp */; };
+		5FD21A001C0D68440038F4CA /* ACSLM_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD219F51C0D68440038F4CA /* ACSLM_1.cpp */; };
+		5FD21A011C0D68440038F4CA /* ACSLM_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD219F61C0D68440038F4CA /* ACSLM_2.cpp */; };
 		5FD5E9DE1BF9B65700D58582 /* ACMyCharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5E9DC1BF9B65700D58582 /* ACMyCharacterViewController.m */; };
 		5FD5E9DF1BF9B65700D58582 /* ACMyCharacterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FD5E9DD1BF9B65700D58582 /* ACMyCharacterViewController.xib */; };
 		5FD5E9E31BF9C12100D58582 /* SCTouchDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5E9E21BF9C12100D58582 /* SCTouchDetector.m */; };
@@ -405,6 +414,24 @@
 		5FD219C51C0C9E2C0038F4CA /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		5FD219C61C0C9E2C0038F4CA /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		5FD219C71C0C9E2C0038F4CA /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		5FD219E41C0D68440038F4CA /* ACCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ACCamera.cpp; sourceTree = "<group>"; };
+		5FD219E51C0D68440038F4CA /* ACCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCamera.h; sourceTree = "<group>"; };
+		5FD219E61C0D68440038F4CA /* ACEnv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACEnv.h; sourceTree = "<group>"; };
+		5FD219E71C0D68440038F4CA /* ACException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ACException.cpp; sourceTree = "<group>"; };
+		5FD219E81C0D68440038F4CA /* ACException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACException.h; sourceTree = "<group>"; };
+		5FD219E91C0D68440038F4CA /* ACGradient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ACGradient.cpp; sourceTree = "<group>"; };
+		5FD219EA1C0D68440038F4CA /* ACGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACGradient.h; sourceTree = "<group>"; };
+		5FD219EB1C0D68440038F4CA /* ACGradientTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ACGradientTest.cpp; sourceTree = "<group>"; };
+		5FD219EC1C0D68440038F4CA /* ACShadow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ACShadow.cpp; sourceTree = "<group>"; };
+		5FD219ED1C0D68440038F4CA /* ACShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACShadow.h; sourceTree = "<group>"; };
+		5FD219EE1C0D68440038F4CA /* ACShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ACShape.cpp; sourceTree = "<group>"; };
+		5FD219EF1C0D68440038F4CA /* ACShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACShape.h; sourceTree = "<group>"; };
+		5FD219F01C0D68440038F4CA /* ACShapeFeature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ACShapeFeature.cpp; sourceTree = "<group>"; };
+		5FD219F11C0D68440038F4CA /* ACShapeFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACShapeFeature.h; sourceTree = "<group>"; };
+		5FD219F31C0D68440038F4CA /* ACMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMath.h; sourceTree = "<group>"; };
+		5FD219F41C0D68440038F4CA /* ACSLM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACSLM.h; sourceTree = "<group>"; };
+		5FD219F51C0D68440038F4CA /* ACSLM_1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ACSLM_1.cpp; sourceTree = "<group>"; };
+		5FD219F61C0D68440038F4CA /* ACSLM_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ACSLM_2.cpp; sourceTree = "<group>"; };
 		5FD5E9DB1BF9B65700D58582 /* ACMyCharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACMyCharacterViewController.h; path = meVC/myProfileVC/ACMyCharacterViewController.h; sourceTree = "<group>"; };
 		5FD5E9DC1BF9B65700D58582 /* ACMyCharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACMyCharacterViewController.m; path = meVC/myProfileVC/ACMyCharacterViewController.m; sourceTree = "<group>"; };
 		5FD5E9DD1BF9B65700D58582 /* ACMyCharacterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ACMyCharacterViewController.xib; path = meVC/myProfileVC/ACMyCharacterViewController.xib; sourceTree = "<group>"; };
@@ -538,6 +565,7 @@
 		5F2151F61BF74EF300511337 /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				5FD219E31C0D68440038F4CA /* src */,
 				5FD219941C0C9D990038F4CA /* UIImageView-PlayGIF */,
 				5FD219911C0C9D340038F4CA /* LocationManagerFramework */,
 				5FD219601C0C96F80038F4CA /* FaceppSDK_ARC */,
@@ -1071,6 +1099,56 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		5FD219E31C0D68440038F4CA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5FD219E41C0D68440038F4CA /* ACCamera.cpp */,
+				5FD219E51C0D68440038F4CA /* ACCamera.h */,
+				5FD219E61C0D68440038F4CA /* ACEnv.h */,
+				5FD219E71C0D68440038F4CA /* ACException.cpp */,
+				5FD219E81C0D68440038F4CA /* ACException.h */,
+				5FD219E91C0D68440038F4CA /* ACGradient.cpp */,
+				5FD219EA1C0D68440038F4CA /* ACGradient.h */,
+				5FD219EB1C0D68440038F4CA /* ACGradientTest.cpp */,
+				5FD219EC1C0D68440038F4CA /* ACShadow.cpp */,
+				5FD219ED1C0D68440038F4CA /* ACShadow.h */,
+				5FD219EE1C0D68440038F4CA /* ACShape.cpp */,
+				5FD219EF1C0D68440038F4CA /* ACShape.h */,
+				5FD219F01C0D68440038F4CA /* ACShapeFeature.cpp */,
+				5FD219F11C0D68440038F4CA /* ACShapeFeature.h */,
+				5FD219F21C0D68440038F4CA /* math */,
+				5FD219F71C0D68440038F4CA /* module */,
+				5FD219F81C0D68440038F4CA /* tools */,
+			);
+			name = src;
+			path = ../acow/src;
+			sourceTree = "<group>";
+		};
+		5FD219F21C0D68440038F4CA /* math */ = {
+			isa = PBXGroup;
+			children = (
+				5FD219F31C0D68440038F4CA /* ACMath.h */,
+				5FD219F41C0D68440038F4CA /* ACSLM.h */,
+				5FD219F51C0D68440038F4CA /* ACSLM_1.cpp */,
+				5FD219F61C0D68440038F4CA /* ACSLM_2.cpp */,
+			);
+			path = math;
+			sourceTree = "<group>";
+		};
+		5FD219F71C0D68440038F4CA /* module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
+		5FD219F81C0D68440038F4CA /* tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
 		5FD5E9E71BF9CCC300D58582 /* Run Cycle 1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1264,14 +1342,17 @@
 				5FD5E9E31BF9C12100D58582 /* SCTouchDetector.m in Sources */,
 				5FD219851C0C96F80038F4CA /* FaceppError.m in Sources */,
 				5FD2178C1C0C20BB0038F4CA /* AFSecurityPolicy.m in Sources */,
+				5FD219FD1C0D68440038F4CA /* ACShadow.cpp in Sources */,
 				5FD2195E1C0C964E0038F4CA /* OpenShare+Weixin.m in Sources */,
 				5FD219341C0C94610038F4CA /* ACViewController.m in Sources */,
 				5FD219D81C0C9E2C0038F4CA /* UIScrollView+MJExtension.m in Sources */,
 				5FD219DA1C0C9E2C0038F4CA /* UIView+MJExtension.m in Sources */,
 				5FD217891C0C20BB0038F4CA /* AFHTTPRequestOperationManager.m in Sources */,
+				5FD219FC1C0D68440038F4CA /* ACGradientTest.cpp in Sources */,
 				5FD219CA1C0C9E2C0038F4CA /* MJRefreshComponent.m in Sources */,
 				5FD218631C0C85290038F4CA /* KPool.m in Sources */,
 				5FD217A21C0C20BB0038F4CA /* YTKNetworkPrivate.m in Sources */,
+				5FD21A011C0D68440038F4CA /* ACSLM_2.cpp in Sources */,
 				5FD219D41C0C9E2C0038F4CA /* MJRefreshNormalHeader.m in Sources */,
 				5FD2179F1C0C20BB0038F4CA /* YTKChainRequestAgent.m in Sources */,
 				5FD217881C0C20BB0038F4CA /* AFHTTPRequestOperation.m in Sources */,
@@ -1298,6 +1379,7 @@
 				5FD219461C0C949C0038F4CA /* SWTableViewCell.m in Sources */,
 				5FD217AD1C0C21A00038F4CA /* ACUserInfo.m in Sources */,
 				5FD218621C0C85290038F4CA /* KObject.m in Sources */,
+				5FD219FB1C0D68440038F4CA /* ACGradient.cpp in Sources */,
 				5FD219D91C0C9E2C0038F4CA /* UIScrollView+MJRefresh.m in Sources */,
 				5FD219D21C0C9E2C0038F4CA /* MJRefreshBackStateFooter.m in Sources */,
 				5FD219821C0C96F80038F4CA /* FaceppPerson.m in Sources */,
@@ -1322,6 +1404,7 @@
 				5FD219861C0C96F80038F4CA /* FaceppResult.m in Sources */,
 				5FD219431C0C949C0038F4CA /* NSMutableArray+SWUtilityButtons.m in Sources */,
 				5FD219811C0C96F80038F4CA /* FaceppInfo.m in Sources */,
+				5FD21A001C0D68440038F4CA /* ACSLM_1.cpp in Sources */,
 				5FD2178A1C0C20BB0038F4CA /* AFHTTPSessionManager.m in Sources */,
 				5FD2195F1C0C964E0038F4CA /* OpenShare.m in Sources */,
 				5FD217331C0C20690038F4CA /* shape-detect.cpp in Sources */,
@@ -1345,7 +1428,10 @@
 				5FD219C81C0C9E2C0038F4CA /* MJRefreshAutoFooter.m in Sources */,
 				5FD217AA1C0C20BB0038F4CA /* NSString+CCExtension.m in Sources */,
 				5FD219CE1C0C9E2C0038F4CA /* MJRefreshAutoNormalFooter.m in Sources */,
+				5FD219FE1C0D68440038F4CA /* ACShape.cpp in Sources */,
+				5FD219FF1C0D68440038F4CA /* ACShapeFeature.cpp in Sources */,
 				5FD219CF1C0C9E2C0038F4CA /* MJRefreshAutoStateFooter.m in Sources */,
+				5FD219FA1C0D68440038F4CA /* ACException.cpp in Sources */,
 				5FD217A61C0C20BB0038F4CA /* CCUserInfoAPI.m in Sources */,
 				5F2152001BF7639F00511337 /* ACViewDelegate.m in Sources */,
 				0AABD68A1737B04C009E541D /* ACDiscoverViewController.m in Sources */,
@@ -1363,6 +1449,7 @@
 				5FD217A51C0C20BB0038F4CA /* CCSucessMessage.m in Sources */,
 				5FD2197F1C0C96F80038F4CA /* FaceppGroup.m in Sources */,
 				5FD2179E1C0C20BB0038F4CA /* YTKChainRequest.m in Sources */,
+				5FD219F91C0D68440038F4CA /* ACCamera.cpp in Sources */,
 				5FD218681C0C858F0038F4CA /* MSCNetworkTypeMonitor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
