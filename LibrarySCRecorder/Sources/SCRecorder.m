@@ -58,7 +58,7 @@ static char* SCRecorderPhotoOptionsContext = "PhotoOptionsContext";
         // 生成一个队列，默认串行： NULL == DISPATCH_QUEUE_SERIAL
         _sessionQueue = dispatch_queue_create("me.corsin.SCRecorder.RecordSession", nil);
         // 这个是并行
-//        _sessionQueue = dispatch_queue_create("me.corsin.SCRecorder.RecordSession", DISPATCH_QUEUE_CONCURRENT);
+        //        _sessionQueue = dispatch_queue_create("me.corsin.SCRecorder.RecordSession", DISPATCH_QUEUE_CONCURRENT);
         
         // 指定key
         dispatch_queue_set_specific(_sessionQueue, kSCRecorderRecordSessionQueueKey, "true", nil);
@@ -98,7 +98,7 @@ static char* SCRecorderPhotoOptionsContext = "PhotoOptionsContext";
         _context = [SCContext new].CIContext;
         
         // 因为捕捉到得帧是YUV颜色通道的，这种颜色通道无法通过指定函数转换，RGBA颜色通道才可以成功转换，所以，先需要把视频帧的输出格式设置一下.
-//        [_videoOutput setVideoSettings:[NSDictionary dictionaryWithObject:[NSNumber numberWithInt:kCVPixelFormatType_32BGRA] forKey:(id)kCVPixelBufferPixelFormatTypeKey]];
+        //        [_videoOutput setVideoSettings:[NSDictionary dictionaryWithObject:[NSNumber numberWithInt:kCVPixelFormatType_32BGRA] forKey:(id)kCVPixelBufferPixelFormatTypeKey]];
     }
     
     return self;
@@ -348,7 +348,7 @@ static char* SCRecorderPhotoOptionsContext = "PhotoOptionsContext";
     id<SCRecorderDelegate> delegate = self.delegate;
     
     if (![delegate respondsToSelector:@selector(recorderShouldAutomaticallyRefocus:)] || [delegate recorderShouldAutomaticallyRefocus:self]) {
-        [self focusCenter];        
+        [self focusCenter];
     }
 }
 
@@ -471,8 +471,10 @@ static char* SCRecorderPhotoOptionsContext = "PhotoOptionsContext";
 - (void)record {
     void (^block)() = ^{
         _isRecording = YES; // 设定状态
-        // 如果movieOutput和session都不为空
-        if (_movieOutput != nil && _session != nil) {             _movieOutput.maxRecordedDuration = self.maxRecordDuration;
+        
+        // 下面这段在demo里其实没有执行。如果movieOutput和session都不为空
+        if (_movieOutput != nil && _session != nil) {
+            _movieOutput.maxRecordedDuration = self.maxRecordDuration;
             [self beginRecordSegmentIfNeeded:_session]; // 开始录制
             if (_movieOutputProgressTimer == nil) {
                 // 如果视频输出过程的时间为空，新建一个，将调用代理的_progressTimerFired方法
@@ -540,7 +542,7 @@ static char* SCRecorderPhotoOptionsContext = "PhotoOptionsContext";
     return [NSError errorWithDomain:@"SCRecorder" code:200 userInfo:@{NSLocalizedDescriptionKey : errorDescription}];
 }
 
-// 开始录制
+// 视频被存在缓冲区里，松开手时，开始录制到文件。
 - (void)beginRecordSegmentIfNeeded:(SCRecordSession *)recordSession {
     if (!recordSession.recordSegmentBegan) {
         NSError *error = nil;
@@ -736,13 +738,13 @@ static char* SCRecorderPhotoOptionsContext = "PhotoOptionsContext";
  */
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection {
     
-//            if(self.videoPreviewImage != nil){
-//                dispatch_async(dispatch_get_main_queue(), ^{
-//                    [_videoPreviewImage setImageBySampleBuffer:sampleBuffer];
-////                    CFRelease(sampleBuffer);
-//                });
-//    
-//            }
+    //            if(self.videoPreviewImage != nil){
+    //                dispatch_async(dispatch_get_main_queue(), ^{
+    //                    [_videoPreviewImage setImageBySampleBuffer:sampleBuffer];
+    ////                    CFRelease(sampleBuffer);
+    //                });
+    //
+    //            }
     // 因为音频、视频的代理方法是一样的，所以要在这里判断，放入session.output的是什么，来确定是音频还是视频。
     if (captureOutput == _videoOutput) {
         if (_videoConfiguration.shouldIgnore) {
@@ -775,7 +777,7 @@ static char* SCRecorderPhotoOptionsContext = "PhotoOptionsContext";
         //            NSLog(@"Warning: Reached %d waiting to process", _buffersWaitingToProcessCount);
         //        }
         //        NSLog(@"Waiting to process %d", _buffersWaitingToProcessCount);
-
+        
     }
     
     SCRecordSession *recordSession = _session;
@@ -783,10 +785,10 @@ static char* SCRecorderPhotoOptionsContext = "PhotoOptionsContext";
     // 如果不是(懒模式(新建session)并且没有在录制#￥￥#@)，就是在录制的时候...
     if (!(_initializeSessionLazily && !_isRecording) && recordSession != nil) {
         if (recordSession != nil) {
-//                SCSampleBufferHolder *_videoBuffer = [SCSampleBufferHolder new];
-//                _videoBuffer.sampleBuffer =sampleBuffer;
-//                UIImage *img = [self _imageFromSampleBufferHolder:_videoBuffer];
-//                [_videoPreviewImage setImage:img];
+            //                SCSampleBufferHolder *_videoBuffer = [SCSampleBufferHolder new];
+            //                _videoBuffer.sampleBuffer =sampleBuffer;
+            //                UIImage *img = [self _imageFromSampleBufferHolder:_videoBuffer];
+            //                [_videoPreviewImage setImage:img];
             // 如查输出是视频
             if (captureOutput == _videoOutput) {
                 if (!recordSession.videoInitializationFailed && !_videoConfiguration.shouldIgnore) {
@@ -824,32 +826,8 @@ static char* SCRecorderPhotoOptionsContext = "PhotoOptionsContext";
                                 //                                    NSLog(@"Too fast! Waiting %fs", timeToWait);
                                 [NSThread sleepForTimeInterval:timeToWait];
                             }
-
+                            
                             // 到这里，可以确认，sampleBuffer是视频的。但还不能使用_context取图像。
-                            
-                            //                            if (_videoPreviewImage != nil){
-                            //                            }
-                            
-                            //                            NSLog(@"当前线程: %@", [NSThread currentThread]);
-//                                            SCSampleBufferHolder *_videoBuffer = [SCSampleBufferHolder new];
-//                                            _videoBuffer.sampleBuffer =sampleBuffer;
-//                                            UIImage *img = [self imageFromSampleBuffer1:sampleBuffer];
-//                                            [_videoPreviewImage setImage:img];
-//                            UIImage * pview = [self imageFromSampleBuffer:sampleBuffer];
-//                            UIImage * pview = img;
-//                            
-//                            
-//                            dispatch_async(dispatch_get_main_queue(), ^{
-//                                //                [self setVideoPreviewImage:pview];
-//                                //                                _videoPreviewImage.image = pview;
-//                                //
-//                                //                                UIImage *img = [UIImage imageNamed:@"Play-Pressed-icon.png"];
-//                                [_videoPreviewImage setImage:pview];
-//                                
-//                            });
-//                            
-                            //                            _videoPreviewImage.image = img;
-                            
                             
                             // 向录制Session增加一个sampleBuffer。如果成功，执行sucess。在这个方法里，使用了_context。
                             [self appendVideoSampleBuffer:sampleBuffer toRecordSession:recordSession duration:duration connection:connection completion:^(BOOL success) {
@@ -936,7 +914,7 @@ static char* SCRecorderPhotoOptionsContext = "PhotoOptionsContext";
 
 - (void)_focusDidComplete {
     id<SCRecorderDelegate> delegate = self.delegate;
-
+    
     [self setAdjustingFocus:NO];
     
     if ([delegate respondsToSelector:@selector(recorderDidEndFocus:)]) {
@@ -967,11 +945,11 @@ static char* SCRecorderPhotoOptionsContext = "PhotoOptionsContext";
         BOOL isAdjustingExposure = [[change objectForKey:NSKeyValueChangeNewKey] boolValue];
         
         [self setAdjustingExposure:isAdjustingExposure];
-
+        
         if (isAdjustingExposure) {
             if ([delegate respondsToSelector:@selector(recorderDidStartAdjustingExposure:)]) {
                 [delegate recorderDidStartAdjustingExposure:self];
-            }            
+            }
         } else {
             if ([delegate respondsToSelector:@selector(recorderDidEndAdjustingExposure:)]) {
                 [delegate recorderDidEndAdjustingExposure:self];
@@ -1457,7 +1435,7 @@ static char* SCRecorderPhotoOptionsContext = "PhotoOptionsContext";
         [self willChangeValueForKey:@"isAdjustingFocus"];
         
         _adjustingFocus = adjustingFocus;
-                
+        
         [self didChangeValueForKey:@"isAdjustingFocus"];
     }
 }
@@ -1702,32 +1680,32 @@ static char* SCRecorderPhotoOptionsContext = "PhotoOptionsContext";
 // Create a UIImage from sample buffer data
 - (UIImage *) imageFromSampleBuffer1:(CMSampleBufferRef) sampleBuffer
 {
-////    CGContextRef context ;//= UIGraphicsGetCurrentContext();
-//
-//    // Get a CMSampleBuffer's Core Video image buffer for the media data
-//    CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
-//    // Lock the base address of the pixel buffer
-//    CVPixelBufferLockBaseAddress(imageBuffer, 0);
-//    
-//    // Get the number of bytes per row for the pixel buffer
-//    void *baseAddress = CVPixelBufferGetBaseAddress(imageBuffer);
-//    
-//    // Get the number of bytes per row for the pixel buffer
-//    // Get the pixel buffer width and height
-//    size_t width = CVPixelBufferGetWidth(imageBuffer);
-//    size_t height = CVPixelBufferGetHeight(imageBuffer);
-//    size_t bytesPerRow = CVPixelBufferGetBytesPerRow(imageBuffer);
-////    size_t bytesPerRow = width * 8;//CVPixelBufferGetBytesPerRow(imageBuffer);
-//    
-//    // Create a device-dependent RGB color space
-//    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-//    
-//    
-//    //CGColorSpaceRef space = CGColorSpaceCreateDeviceRGB();
-////    size_t bytesPerRow = 4 * roundf(bounds.size.width);    // Create a bitmap graphics context with the sample buffer data
-//    CGContextRef context = CGBitmapContextCreate(baseAddress, width, height, 8,
-//                                                 bytesPerRow * 4, colorSpace, kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
-//    // Create a Quartz image from the pixel data in the bitmap graphics context
+    ////    CGContextRef context ;//= UIGraphicsGetCurrentContext();
+    //
+    //    // Get a CMSampleBuffer's Core Video image buffer for the media data
+    //    CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
+    //    // Lock the base address of the pixel buffer
+    //    CVPixelBufferLockBaseAddress(imageBuffer, 0);
+    //
+    //    // Get the number of bytes per row for the pixel buffer
+    //    void *baseAddress = CVPixelBufferGetBaseAddress(imageBuffer);
+    //
+    //    // Get the number of bytes per row for the pixel buffer
+    //    // Get the pixel buffer width and height
+    //    size_t width = CVPixelBufferGetWidth(imageBuffer);
+    //    size_t height = CVPixelBufferGetHeight(imageBuffer);
+    //    size_t bytesPerRow = CVPixelBufferGetBytesPerRow(imageBuffer);
+    ////    size_t bytesPerRow = width * 8;//CVPixelBufferGetBytesPerRow(imageBuffer);
+    //
+    //    // Create a device-dependent RGB color space
+    //    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    //
+    //
+    //    //CGColorSpaceRef space = CGColorSpaceCreateDeviceRGB();
+    ////    size_t bytesPerRow = 4 * roundf(bounds.size.width);    // Create a bitmap graphics context with the sample buffer data
+    //    CGContextRef context = CGBitmapContextCreate(baseAddress, width, height, 8,
+    //                                                 bytesPerRow * 4, colorSpace, kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+    //    // Create a Quartz image from the pixel data in the bitmap graphics context
     
     // TODO: 下面这段是从sampleBuffer中取出图像的地方。
     CVPixelBufferRef buffer = CMSampleBufferGetImageBuffer(sampleBuffer);
@@ -1741,7 +1719,7 @@ static char* SCRecorderPhotoOptionsContext = "PhotoOptionsContext";
     CFRelease(sampleBuffer);
     
     return image;
-
+    
 }
 
 
@@ -1778,6 +1756,6 @@ static char* SCRecorderPhotoOptionsContext = "PhotoOptionsContext";
 
 
 /*
-
+ 
  */
 @end

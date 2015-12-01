@@ -22,6 +22,14 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l96-h3-rRt">
+                    <rect key="frame" x="8" y="400" width="46" height="30"/>
+                    <animations/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="test:" destination="-1" eventType="touchUpInside" id="Csg-xU-v8z"/>
+                    </connections>
+                </button>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

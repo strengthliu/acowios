@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YTKChainRequest.h"
+#import "UMTableViewCell.h"
 
-@interface ACMessageViewController : UIViewController
+@interface ACMessageViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, SWTableViewCellDelegate,YTKChainRequestDelegate>
+- (IBAction)test:(UIButton *)sender;
 
 @end

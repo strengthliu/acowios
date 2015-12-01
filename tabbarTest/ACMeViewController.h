@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ACViewController.h"
+#import "SCRecorder/SCRecorder.h"
 
-@interface ACMeViewController : UIViewController
+
+@interface ACMeViewController : ACViewController
 
 - (IBAction)configButtonClicked:(UIButton *)sender;
 
+- (IBAction)screcorderTest:(UIButton *)sender;
 @end

@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1069BFDF24845887272FBD2D8F3FE7E9931C7DE0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F4ADDDAE21A48DCA6DCFBC6B73F9B8DA31100F0F" : 0,
+    "1069BFDF24845887272FBD2D8F3FE7E9931C7DE0" : 0,
+    "FDCF8D3D454230440063CBE3E5EF4A3940FF738A" : 0,
+    "47C2EBADF7F1580D2B15A5A266557F7980B22A76" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F5E3744A-F5BD-4E8F-91E7-C203EF366173",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F4ADDDAE21A48DCA6DCFBC6B73F9B8DA31100F0F" : "soundtouch\/",
+    "1069BFDF24845887272FBD2D8F3FE7E9931C7DE0" : "acowios\/",
+    "FDCF8D3D454230440063CBE3E5EF4A3940FF738A" : "openshare\/",
+    "47C2EBADF7F1580D2B15A5A266557F7980B22A76" : "acow\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "acaoios",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "acaoios.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/strengthliu\/acowios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1069BFDF24845887272FBD2D8F3FE7E9931C7DE0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/strengthliu\/acow.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "47C2EBADF7F1580D2B15A5A266557F7980B22A76"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/talko\/soundtouch",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F4ADDDAE21A48DCA6DCFBC6B73F9B8DA31100F0F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/100apps\/openshare",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FDCF8D3D454230440063CBE3E5EF4A3940FF738A"
+    }
+  ]
+}

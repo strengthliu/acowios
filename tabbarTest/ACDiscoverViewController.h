@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ACViewController.h"
 
-@interface ACDiscoverViewController : UIViewController
+@interface ACDiscoverViewController : ACViewController
+- (IBAction)test:(UIButton *)sender;
 
 @end

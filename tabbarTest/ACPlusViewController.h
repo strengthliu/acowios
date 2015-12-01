@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ACPlusViewController : UIViewController
+- (IBAction)test:(UIButton *)sender;
 
 @end

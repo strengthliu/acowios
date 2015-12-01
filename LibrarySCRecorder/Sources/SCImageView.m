@@ -116,6 +116,7 @@
 - (void)setContext:(SCContext * _Nullable)context {
     [self unloadContext];
 
+    NSLog(@"setContext int SCImageView.");
     if (context != nil) {
         switch (context.type) {
             case SCContextTypeCoreGraphics:
@@ -247,7 +248,8 @@
 
 - (void)setImageBySampleBuffer:(CMSampleBufferRef)sampleBuffer {
     _sampleBufferHolder.sampleBuffer = sampleBuffer;
-    
+//    NSLog(@"setImageBySampleBuffer in SCImageView.");
+//    self.layer
     [self setNeedsDisplay];
 }
 
