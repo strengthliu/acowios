@@ -7,22 +7,29 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ACPlusViewController">
             <connections>
+                <outlet property="recordPreview" destination="aG7-18-ggB" id="VhB-wk-fbp"/>
+                <outlet property="scenesList" destination="Rl2-0h-L4n" id="uhL-J5-wJx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <navigationBar contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DvE-xb-Gr7">
-                    <rect key="frame" x="0.0" y="17" width="352" height="44"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rl2-0h-L4n">
+                    <rect key="frame" x="0.0" y="66" width="414" height="626"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <navigationBar contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DvE-xb-Gr7">
+                    <rect key="frame" x="0.0" y="22" width="414" height="44"/>
                     <animations/>
                     <items>
                         <navigationItem title="Title" id="heB-ve-ryS">
                             <barButtonItem key="leftBarButtonItem" style="plain" id="O2P-Ha-jMg">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wUj-Eo-zkZ">
-                                    <rect key="frame" x="16" y="7" width="30" height="30"/>
+                                    <rect key="frame" x="20" y="7" width="30" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <animations/>
                                     <state key="normal" title="退出"/>
@@ -34,35 +41,21 @@
                         </navigationItem>
                     </items>
                 </navigationBar>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Um-1X-Rhq">
-                    <rect key="frame" x="0.0" y="61" width="352" height="195"/>
-                    <animations/>
-                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aG7-18-ggB">
-                    <rect key="frame" x="0.0" y="258" width="352" height="188"/>
+                    <rect key="frame" x="41" y="108" width="333" height="519"/>
                     <animations/>
                 </imageView>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eTM-fk-eUN">
-                    <rect key="frame" x="0.0" y="473" width="600" height="44"/>
-                    <animations/>
-                    <items>
-                        <barButtonItem title="Item" id="GAz-TN-9dD"/>
-                        <barButtonItem title="Item" id="bOm-Fa-ycQ"/>
-                    </items>
-                </toolbar>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gh-Sk-aNs">
-                    <rect key="frame" x="21" y="443" width="46" height="30"/>
-                    <animations/>
-                    <state key="normal" title="Button"/>
-                    <connections>
-                        <action selector="test:" destination="-1" eventType="touchUpInside" id="2UA-yM-Fgr"/>
-                    </connections>
-                </button>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DvE-xb-Gr7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="8cj-M2-sxU"/>
+                <constraint firstItem="DvE-xb-Gr7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="1" id="WQi-zN-XCK"/>
+                <constraint firstAttribute="trailing" secondItem="DvE-xb-Gr7" secondAttribute="trailing" constant="1" id="XN9-MZ-Uzi"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
             <variation key="heightClass=compact" layoutMarginsFollowReadableWidth="YES"/>
-            <point key="canvasLocation" x="357" y="378"/>
+            <point key="canvasLocation" x="359" y="238"/>
         </view>
     </objects>
 </document>

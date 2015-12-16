@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "ACViewController.h"
+#import "SWTableViewCell.h"
+#import "YTKChainRequest.h"
+#import "ACFriendsTableViewCell.h"
 
-@interface ACFriendsViewController : ACViewController
+@interface ACFriendsViewController : ACViewController<UITableViewDelegate, UITableViewDataSource, SWTableViewCellDelegate,YTKChainRequestDelegate>
 
 - (IBAction)test:(UIButton *)sender;
 @end

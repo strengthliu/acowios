@@ -7,7 +7,7 @@
 //
 
 #import "ACMyCharacterViewController.h"
-
+#import "ACDrawFaceFilter.h"
 
 @interface ACMyCharacterViewController () {
     SCRecorder *_recorder;
@@ -92,13 +92,24 @@
     /**
      *  设置过滤器
      */
-    SCFilterImageView *scimageview = self.scimageView;
-//    SCFilter *filter = [[SCFilter alloc]init];
+    if ([[NSProcessInfo processInfo] activeProcessorCount] > 1) {
+        self.scimageView.contentMode = UIViewContentModeScaleAspectFill;
+        
+//        SCFilter *emptyFilter = [SCFilter emptyFilter];
+//        emptyFilter.name = @"#nofilter";
+//        self.scimageView.filter = emptyFilter;
+        
+        ACDrawFaceFilter *acDrawFaceFilter = [[ACDrawFaceFilter alloc]init];
+        acDrawFaceFilter.delegate = acDrawFaceFilter;
     
-    [self.scimageView setFilter:[self createAnimatedFilter]];
+        self.scimageView.filter = acDrawFaceFilter;
+    }
+//    SCFilterImageView *scimageview = self.scimageView;
+//    SCFilter *filter = [[SCFilter alloc]init];
+//    [self.scimageView setFilter:[self createAnimatedFilter]];
 //    [scimageview setFilter:filter];
     //
-    _recorder.SCImageView = scimageview;
+    _recorder.SCImageView = self.scimageView;
     
     UIView *previewView = self.previewView;
     _recorder.previewView = previewView;

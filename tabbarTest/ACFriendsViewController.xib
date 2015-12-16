@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ACFriendsViewController">
             <connections>
+                <outlet property="searchDisplayController" destination="mdq-pZ-gAS" id="XOR-je-iWy"/>
+                <outlet property="tableView" destination="Xo1-33-dPb" id="97H-Bv-rE8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,24 +17,51 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhc-7W-geh">
-                    <rect key="frame" x="17" y="33" width="54" height="21"/>
+                <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Loj-DG-9br">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                     <animations/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l96-h3-rRt">
-                    <rect key="frame" x="8" y="400" width="46" height="30"/>
+                    <items>
+                        <navigationItem title="Title" id="Gty-A8-9Mb">
+                            <barButtonItem key="leftBarButtonItem" title="Item" id="8vP-ib-Vbf"/>
+                            <barButtonItem key="rightBarButtonItem" title="Item" id="gSo-gx-E7m"/>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xo1-33-dPb">
+                    <rect key="frame" x="0.0" y="114" width="600" height="398"/>
                     <animations/>
-                    <state key="normal" title="Button"/>
-                    <connections>
-                        <action selector="test:" destination="-1" eventType="touchUpInside" id="Csg-xU-v8z"/>
-                    </connections>
-                </button>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U0r-rJ-irF">
+                    <rect key="frame" x="0.0" y="44" width="600" height="44"/>
+                    <animations/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="U0r-rJ-irF" secondAttribute="trailing" constant="1" id="5ww-fU-7Zs"/>
+                <constraint firstItem="Xo1-33-dPb" firstAttribute="top" secondItem="Loj-DG-9br" secondAttribute="bottom" constant="1" id="AFM-Ri-Bq3"/>
+                <constraint firstItem="Loj-DG-9br" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="1" id="DMW-Ns-Aiq"/>
+                <constraint firstAttribute="trailing" secondItem="Xo1-33-dPb" secondAttribute="trailing" constant="1" id="IWb-MJ-GEj"/>
+                <constraint firstAttribute="bottom" secondItem="Xo1-33-dPb" secondAttribute="bottom" constant="1" id="Nn1-Sx-kVi"/>
+                <constraint firstItem="Xo1-33-dPb" firstAttribute="top" secondItem="Loj-DG-9br" secondAttribute="bottom" constant="1" id="Tr1-ds-PJD"/>
+                <constraint firstItem="Xo1-33-dPb" firstAttribute="top" secondItem="U0r-rJ-irF" secondAttribute="bottom" constant="1" id="TtP-mh-Q9V"/>
+                <constraint firstItem="U0r-rJ-irF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="1" id="Xcy-Wp-1IE"/>
+                <constraint firstAttribute="trailing" secondItem="Xo1-33-dPb" secondAttribute="trailing" constant="1" id="Xv9-w3-rFW"/>
+                <constraint firstItem="Xo1-33-dPb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="1" id="v2W-ss-Vah"/>
+                <constraint firstAttribute="trailing" secondItem="Loj-DG-9br" secondAttribute="trailing" constant="1" id="vsm-DA-hWa"/>
+                <constraint firstItem="Xo1-33-dPb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="1" id="y6E-8W-J95"/>
+            </constraints>
         </view>
+        <searchDisplayController id="mdq-pZ-gAS">
+            <connections>
+                <outlet property="delegate" destination="-1" id="6Su-ta-96Y"/>
+                <outlet property="searchContentsController" destination="-1" id="TfN-7e-E4u"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="vMj-93-kvp"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="Utc-g3-2Jf"/>
+            </connections>
+        </searchDisplayController>
     </objects>
 </document>

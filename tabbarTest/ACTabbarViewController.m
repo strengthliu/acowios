@@ -85,19 +85,19 @@
     NSArray* tabBarItems = nil;
     
     ACMessageViewController *message = [[ACMessageViewController alloc]initWithNibName:@"ACMessageViewController" bundle:nil];
-    message.view.backgroundColor = [UIColor redColor];
-    
+//    message.view.backgroundColor = [UIColor darkGrayColor];
+
     ACDiscoverViewController *discover = [[ACDiscoverViewController alloc]initWithNibName:@"ACDiscoverViewController" bundle:nil];
-    discover.view.backgroundColor = [UIColor greenColor];
+//    discover.view.backgroundColor = [UIColor darkGrayColor];
     
     ACPlusViewController *plus = [[ACPlusViewController alloc]initWithNibName:@"ACPlusViewController" bundle:nil];
-    plus.view.backgroundColor = [UIColor grayColor];
+//    plus.view.backgroundColor = [UIColor darkGrayColor];
     
     ACFriendsViewController *friends = [[ACFriendsViewController alloc]initWithNibName:@"ACFriendsViewController" bundle:nil];
-    friends.view.backgroundColor = [UIColor blueColor];
+//    friends.view.backgroundColor = [UIColor darkGrayColor];
     
     ACMeViewController *me = [[ACMeViewController alloc]initWithNibName:@"ACMeViewController" bundle:nil];
-    me.view.backgroundColor = [UIColor purpleColor];
+//    me.view.backgroundColor = [UIColor darkGrayColor];
 
     tabBarItems = [NSArray arrayWithObjects:
                    [NSDictionary dictionaryWithObjectsAndKeys:@"tabicon_home", @"image",@"tabicon_home", @"image_locked", message, @"viewController",@"主页",@"title", nil],

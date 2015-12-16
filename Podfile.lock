@@ -1,18 +1,10 @@
 PODS:
-  - AsyncDisplayKit (1.9.1):
-    - AsyncDisplayKit/ASDealloc2MainObject (= 1.9.1)
-  - AsyncDisplayKit/ASDealloc2MainObject (1.9.1)
-  - INTULocationManager (4.1.1)
   - MMProgressHUD (0.3.2)
 
 DEPENDENCIES:
-  - AsyncDisplayKit (~> 1.9.1)
-  - INTULocationManager
   - MMProgressHUD
 
 SPEC CHECKSUMS:
-  AsyncDisplayKit: 7bf2b3fa444284f80fd0c1e36655e324549f79d2
-  INTULocationManager: 83c7373048d583cda57e25eefb9bb8a3675acf16
   MMProgressHUD: a913b116ba6791d67d37f9fb4211079200fb7595
 
 COCOAPODS: 0.39.0

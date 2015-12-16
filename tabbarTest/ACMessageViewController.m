@@ -14,13 +14,13 @@
 #import "YTKChainRequest.h"
 
 @interface ACMessageViewController () {
-    NSArray *_sections;
-    NSMutableArray *_testArray;
+    NSArray *_sections; // 段数
+    NSMutableArray *_testArray; // 每一条cell
 }
 
-@property (nonatomic, weak) IBOutlet UITableView *tableView;
-@property (nonatomic) BOOL useCustomCells;
-@property (nonatomic, weak) UIRefreshControl *refreshControl;
+@property (nonatomic, weak) IBOutlet UITableView *tableView; // tableView
+@property (nonatomic) BOOL useCustomCells; // 是否使用自定义Cell
+@property (nonatomic, weak) UIRefreshControl *refreshControl; // 刷新菊花
 
 @end
 
@@ -38,14 +38,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    
+    // 设置tableView的代理及数据源。
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.rowHeight = 90;
+    // 设置行高
+//    self.tableView.rowHeight = 90;
     self.tableView.allowsSelection = NO; // We essentially implement our own selection
-//    self.tableView
-    
+    // 导航条标题
     self.navigationItem.title = @"Pull to Toggle Cell Type";
     
     // Setup refresh control for example app
@@ -53,27 +52,40 @@
     [refreshControl addTarget:self action:@selector(toggleCells:) forControlEvents:UIControlEventValueChanged];
     refreshControl.tintColor = [UIColor blueColor];
     
+//    self.tableView.frame = self.view.bounds;
+//    CGRect rect = CGRectMake(self.view.bounds.origin.x, self.view.bounds.origin.y, self.view.bounds.size.width, self.view.bounds.size.height+50);
+//    self.view.backgroundColor = [UIColor greenColor];
+//    self.tableView.frame = rect;
+//    UIImageView *img = [[UIImageView alloc]init];
+//    img.frame = self.view.bounds;
+//    img.backgroundColor = [UIColor blueColor];
     [self.tableView addSubview:refreshControl];
+//    [self.view addSubview:img];
     self.refreshControl = refreshControl;
+//    [self.tableView removeFromSuperview];
     
     // If you set the seperator inset on iOS 6 you get a NSInvalidArgumentException...weird
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) {
         self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0); // Makes the horizontal row seperator stretch the entire length of the table view
     }
     
-    _sections = [[UILocalizedIndexedCollation currentCollation] sectionIndexTitles];
+// ======================= 初始化数据 =================
+    // 改为只有1个section
+//    _sections = [[UILocalizedIndexedCollation currentCollation] sectionIndexTitles];
+//    _sections = [[NSMutableArray alloc] init];
     
     _testArray = [[NSMutableArray alloc] init];
     
-    self.useCustomCells = NO;
+//    self.useCustomCells = NO;
+    self.useCustomCells = YES;
     
-    for (int i = 0; i < _sections.count; ++i) {
+    for (int i = 0; i < 1; ++i) {
         [_testArray addObject:[NSMutableArray array]];
     }
     
     for (int i = 0; i < 100; ++i) {
         NSString *string = [NSString stringWithFormat:@"%d", i];
-        [_testArray[i % _sections.count] addObject:string];
+        [_testArray[0] addObject:string];
     }
 
 }
@@ -95,9 +107,9 @@
     [_tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return _sections[section];
-}
+//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+//    return _sections[section];
+//}
 
 // Show index titles
 
@@ -113,17 +125,23 @@
 
 - (void)toggleCells:(UIRefreshControl*)refreshControl
 {
+    // 开始刷新
     [refreshControl beginRefreshing];
-    self.useCustomCells = !self.useCustomCells;
+    // 刷新一次，变换一次显示类型
+//    self.useCustomCells = !self.useCustomCells;
+    // 根据不同情况，选择不同的菊花颜色
     if (self.useCustomCells)
-    {
-        self.refreshControl.tintColor = [UIColor yellowColor];
-    }
-    else
     {
         self.refreshControl.tintColor = [UIColor blueColor];
     }
+    else
+    {
+        self.refreshControl.tintColor = [UIColor yellowColor];
+    }
+    
+    // 重新加载数据
     [self.tableView reloadData];
+    // 结束显示刷新状态
     [refreshControl endRefreshing];
 }
 
@@ -145,12 +163,19 @@
     
     if (self.useCustomCells)
     {
-        UMTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"UMCell" forIndexPath:indexPath];
+        ACMessageTableViewCell *cell;
+//        cell = [self.tableView dequeueReusableCellWithIdentifier:@"ACMessageTableViewCell" forIndexPath:indexPath];
+        cell = [self.tableView dequeueReusableCellWithIdentifier:@"ACMessageTableViewCell"];
+        if(cell == nil) {
+            cell = [[[NSBundle mainBundle]loadNibNamed:@"ACMessageTableViewCell" owner:self options:nil] lastObject];
+            [tableView registerNib:[UINib nibWithNibName:@"ACMessageTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"ACMessageTableViewCell"];
+        }
+        
         [cell setCellHeight:cell.frame.size.height];
         cell.containingTableView = tableView;
+//        cell.label.text = [NSString stringWithFormat:@"Section: %d, Seat: %d", indexPath.section, indexPath.row];
         
-        cell.label.text = [NSString stringWithFormat:@"Section: %d, Seat: %d", indexPath.section, indexPath.row];
-        
+        cell.label.text = @"a";
         cell.leftUtilityButtons = [self leftButtons];
         cell.rightUtilityButtons = [self rightButtons];
         cell.delegate = self;
@@ -164,16 +189,15 @@
         SWTableViewCell *cell = (SWTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
         
         if (cell == nil) {
-            
-            cell = [[SWTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+           cell = [[SWTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
                                           reuseIdentifier:cellIdentifier
                                       containingTableView:_tableView // Used for row height and selection
-                                       leftUtilityButtons:[self leftButtons]
+                                      leftUtilityButtons:[self leftButtons]
                                       rightUtilityButtons:[self rightButtons]];
             cell.delegate = self;
         }
-        
         NSDate *dateObject = _testArray[indexPath.section][indexPath.row];
+        
         cell.textLabel.text = [dateObject description];
         cell.textLabel.backgroundColor = [UIColor whiteColor];
         cell.detailTextLabel.backgroundColor = [UIColor whiteColor];

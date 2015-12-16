@@ -760,6 +760,18 @@ static char* SCRecorderPhotoOptionsContext = "PhotoOptionsContext";
                 // 这里是一个视频图像的出口。
                 // 调用的是SCImageView，先发出去显示。每个sampleBuffer都以异步形式，发到主线程显示。不发到主线程的不能显示。
                 [imageRenderer setImageBySampleBuffer:sampleBuffer];
+                
+//                CMTime time;
+//                CVPixelBufferRef pixelBuffer = [_videoOutput copyPixelBufferForItemTime:outputItemTime itemTimeForDisplay:&time];
+//                if (pixelBuffer != nil) {
+//                    CIImage *inputImage = [CIImage imageWithCVPixelBuffer:pixelBuffer];
+//                    
+//                    renderer.CIImageTime = CMTimeGetSeconds(outputItemTime);
+//                    renderer.CIImage = inputImage;
+//                    
+//                    CVPixelBufferRelease(pixelBuffer);
+//                }
+                
                 CFRelease(sampleBuffer);
             });
         }

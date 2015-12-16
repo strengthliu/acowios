@@ -7,15 +7,25 @@
 //
 
 #import "ACPlusViewController.h"
+#import "SCTouchDetector.h"
 
 #define SELECTED_VIEW_CONTROLLER_TAG 98456345
 
-@interface ACPlusViewController ()
+@interface ACPlusViewController () {
+    SCRecorder *_recorder;
+    SCRecordSession *_recordSession;
+
+}
 - (IBAction)finishSession:(id)sender;
+
 
 @end
 
 @implementation ACPlusViewController
+
+- (void)dealloc {
+    _recorder.previewView = nil;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -62,7 +72,6 @@
 //    [currentView removeFromSuperview];
     
 }
-- (IBAction)test:(UIButton *)sender {
-    NSLog(@"test in plus");
-}
+
+
 @end

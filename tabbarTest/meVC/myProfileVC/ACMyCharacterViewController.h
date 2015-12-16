@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SCTouchDetector.h"
 //#import "SCRecorderFramework.h"
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>

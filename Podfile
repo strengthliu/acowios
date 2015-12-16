@@ -1,12 +1,14 @@
 
-platform :ios, '8.0'
+#platform :ios, '8.0'
 
-pod 'AsyncDisplayKit', '~> 1.9.1'
+#pod 'AsyncDisplayKit', '~> 1.9.1'
 
 source 'https://github.com/CocoaPods/Specs.git'
 
 pod 'MMProgressHUD'
 
-pod 'INTULocationManager'
+#pod 'INTULocationManager'
 
-pod 'MJRefresh'
+#pod 'MJRefresh'
+
+#pod 'OpenCV'

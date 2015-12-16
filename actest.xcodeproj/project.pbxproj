@@ -37,11 +37,27 @@
 		5F727DD41BF58F2A001A051C /* ACPlusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F727DD21BF58F2A001A051C /* ACPlusViewController.m */; };
 		5F727DD51BF58F2A001A051C /* ACPlusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F727DD31BF58F2A001A051C /* ACPlusViewController.xib */; };
 		5F844DFC1BFA26020073378F /* myFilter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F844DFB1BFA26020073378F /* myFilter.mm */; };
+		5F9701211C2013CC003FD4D0 /* ACMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F97011F1C2013CC003FD4D0 /* ACMessageTableViewCell.m */; };
+		5F9701221C2013CC003FD4D0 /* ACMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9701201C2013CC003FD4D0 /* ACMessageTableViewCell.xib */; };
+		5F9701291C2017FD003FD4D0 /* ACFriendsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9701271C2017FD003FD4D0 /* ACFriendsTableViewCell.m */; };
+		5F97012A1C2017FD003FD4D0 /* ACFriendsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9701281C2017FD003FD4D0 /* ACFriendsTableViewCell.xib */; };
+		5F9701B01C21147E003FD4D0 /* ACChatSceneItemCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9701AE1C21147E003FD4D0 /* ACChatSceneItemCellTableViewCell.m */; };
+		5F9701B11C21147E003FD4D0 /* ACChatSceneItemCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9701AF1C21147E003FD4D0 /* ACChatSceneItemCellTableViewCell.xib */; };
+		5F9701B71C214205003FD4D0 /* ACRecordASceneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9701B51C214205003FD4D0 /* ACRecordASceneViewController.m */; };
+		5F9701B81C214205003FD4D0 /* ACRecordASceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9701B61C214205003FD4D0 /* ACRecordASceneViewController.xib */; };
+		5F9701BC1C214249003FD4D0 /* ACEditSceneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9701BA1C214249003FD4D0 /* ACEditSceneViewController.m */; };
+		5F9701BD1C214249003FD4D0 /* ACEditSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9701BB1C214249003FD4D0 /* ACEditSceneViewController.xib */; };
 		5FA8AC841BF6F963002D887D /* ACTabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8AC821BF6F963002D887D /* ACTabbarViewController.xib */; };
 		5FA8AC8A1BF705A8002D887D /* ACMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8AC881BF705A8002D887D /* ACMeViewController.m */; };
 		5FA8AC8B1BF705A8002D887D /* ACMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8AC891BF705A8002D887D /* ACMeViewController.xib */; };
 		5FA8AC991BF72139002D887D /* ACFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8AC971BF72139002D887D /* ACFriendsViewController.m */; };
 		5FA8AC9A1BF72139002D887D /* ACFriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8AC981BF72139002D887D /* ACFriendsViewController.xib */; };
+		5FAAD3631C14271800F93088 /* ACDrawFaceFilter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5FAAD3621C14271800F93088 /* ACDrawFaceFilter.mm */; };
+		5FAAD3691C1429FA00F93088 /* ACFaceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FAAD3681C1429FA00F93088 /* ACFaceManager.m */; };
+		5FAAD3711C142E2F00F93088 /* ACImageConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5FAAD3701C142E2F00F93088 /* ACImageConverter.mm */; };
+		5FAAD3731C14317900F93088 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAAD3721C14317900F93088 /* OpenGLES.framework */; };
+		5FAAD3751C14318200F93088 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAAD3741C14318200F93088 /* OpenAL.framework */; };
+		5FAAD38E1C191FF600F93088 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAAD38D1C191FF600F93088 /* opencv2.framework */; };
 		5FD217331C0C20690038F4CA /* shape-detect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD217311C0C20690038F4CA /* shape-detect.cpp */; };
 		5FD217861C0C20BB0038F4CA /* CCParams-NSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD217341C0C20BB0038F4CA /* CCParams-NSDictionary.m */; };
 		5FD217871C0C20BB0038F4CA /* AFDownloadRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD217381C0C20BB0038F4CA /* AFDownloadRequestOperation.m */; };
@@ -114,7 +130,6 @@
 		5FD219841C0C96F80038F4CA /* FaceppTrainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD219751C0C96F80038F4CA /* FaceppTrainer.m */; };
 		5FD219851C0C96F80038F4CA /* FaceppError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD219781C0C96F80038F4CA /* FaceppError.m */; };
 		5FD219861C0C96F80038F4CA /* FaceppResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD2197A1C0C96F80038F4CA /* FaceppResult.m */; };
-		5FD2198B1C0C97F90038F4CA /* UMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD2198A1C0C97F90038F4CA /* UMTableViewCell.m */; };
 		5FD2198E1C0C9B2C0038F4CA /* ACMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FD219901C0C9B2C0038F4CA /* ACMessageViewController.xib */; };
 		5FD219931C0C9D340038F4CA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FD219921C0C9D340038F4CA /* Info.plist */; };
 		5FD219991C0C9D990038F4CA /* UIImageView+PlayGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD219961C0C9D990038F4CA /* UIImageView+PlayGIF.m */; };
@@ -147,6 +162,9 @@
 		5FD219FF1C0D68440038F4CA /* ACShapeFeature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD219F01C0D68440038F4CA /* ACShapeFeature.cpp */; };
 		5FD21A001C0D68440038F4CA /* ACSLM_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD219F51C0D68440038F4CA /* ACSLM_1.cpp */; };
 		5FD21A011C0D68440038F4CA /* ACSLM_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD219F61C0D68440038F4CA /* ACSLM_2.cpp */; };
+		5FD21A091C0D6E030038F4CA /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD21A041C0D6E030038F4CA /* NSObject+Runtime.m */; };
+		5FD21A0A1C0D6E030038F4CA /* UIViewController+Record.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD21A061C0D6E030038F4CA /* UIViewController+Record.m */; };
+		5FD21A0B1C0D6E030038F4CA /* VOVCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD21A081C0D6E030038F4CA /* VOVCManager.m */; };
 		5FD5E9DE1BF9B65700D58582 /* ACMyCharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5E9DC1BF9B65700D58582 /* ACMyCharacterViewController.m */; };
 		5FD5E9DF1BF9B65700D58582 /* ACMyCharacterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FD5E9DD1BF9B65700D58582 /* ACMyCharacterViewController.xib */; };
 		5FD5E9E31BF9C12100D58582 /* SCTouchDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5E9E21BF9C12100D58582 /* SCTouchDetector.m */; };
@@ -157,7 +175,6 @@
 		5FD5E9F11BF9CCC300D58582 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FD5E9EB1BF9CCC300D58582 /* 4.png */; };
 		5FD5E9F21BF9CCC300D58582 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FD5E9EC1BF9CCC300D58582 /* 5.png */; };
 		5FD5E9F31BF9CCC300D58582 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FD5E9ED1BF9CCC300D58582 /* 6.png */; };
-		5FD5E9FB1BF9E72F00D58582 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD5E9FA1BF9E72F00D58582 /* opencv2.framework */; };
 		5FD5EABC1BF9EA1600D58582 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD5EABB1BF9EA1600D58582 /* AVFoundation.framework */; };
 		5FD5EABE1BF9EA4900D58582 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD5EABD1BF9EA4900D58582 /* Metal.framework */; };
 		5FD5EAC21BF9EA7E00D58582 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD5EAC11BF9EA7E00D58582 /* GLKit.framework */; };
@@ -208,6 +225,21 @@
 		5F727DD31BF58F2A001A051C /* ACPlusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ACPlusViewController.xib; path = ../ACPlusViewController.xib; sourceTree = "<group>"; };
 		5F844DFA1BFA26020073378F /* myFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = myFilter.h; path = meVC/myProfileVC/myFilter.h; sourceTree = "<group>"; };
 		5F844DFB1BFA26020073378F /* myFilter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = myFilter.mm; path = meVC/myProfileVC/myFilter.mm; sourceTree = "<group>"; };
+		5F97011E1C2013CC003FD4D0 /* ACMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACMessageTableViewCell.h; path = messageVC/ACMessageTableViewCell.h; sourceTree = "<group>"; };
+		5F97011F1C2013CC003FD4D0 /* ACMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACMessageTableViewCell.m; path = messageVC/ACMessageTableViewCell.m; sourceTree = "<group>"; };
+		5F9701201C2013CC003FD4D0 /* ACMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ACMessageTableViewCell.xib; path = messageVC/ACMessageTableViewCell.xib; sourceTree = "<group>"; };
+		5F9701261C2017FD003FD4D0 /* ACFriendsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACFriendsTableViewCell.h; path = friendsVC/ACFriendsTableViewCell.h; sourceTree = "<group>"; };
+		5F9701271C2017FD003FD4D0 /* ACFriendsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACFriendsTableViewCell.m; path = friendsVC/ACFriendsTableViewCell.m; sourceTree = "<group>"; };
+		5F9701281C2017FD003FD4D0 /* ACFriendsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ACFriendsTableViewCell.xib; path = friendsVC/ACFriendsTableViewCell.xib; sourceTree = "<group>"; };
+		5F9701AD1C21147E003FD4D0 /* ACChatSceneItemCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACChatSceneItemCellTableViewCell.h; path = tabbarTest/plusVC/ACChatSceneItemCellTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		5F9701AE1C21147E003FD4D0 /* ACChatSceneItemCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACChatSceneItemCellTableViewCell.m; path = tabbarTest/plusVC/ACChatSceneItemCellTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		5F9701AF1C21147E003FD4D0 /* ACChatSceneItemCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ACChatSceneItemCellTableViewCell.xib; path = tabbarTest/plusVC/ACChatSceneItemCellTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		5F9701B41C214205003FD4D0 /* ACRecordASceneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACRecordASceneViewController.h; path = tabbarTest/plusVC/recorderVC/ACRecordASceneViewController.h; sourceTree = SOURCE_ROOT; };
+		5F9701B51C214205003FD4D0 /* ACRecordASceneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACRecordASceneViewController.m; path = tabbarTest/plusVC/recorderVC/ACRecordASceneViewController.m; sourceTree = SOURCE_ROOT; };
+		5F9701B61C214205003FD4D0 /* ACRecordASceneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ACRecordASceneViewController.xib; path = tabbarTest/plusVC/recorderVC/ACRecordASceneViewController.xib; sourceTree = SOURCE_ROOT; };
+		5F9701B91C214249003FD4D0 /* ACEditSceneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACEditSceneViewController.h; path = tabbarTest/plusVC/recorderVC/ACEditSceneViewController.h; sourceTree = SOURCE_ROOT; };
+		5F9701BA1C214249003FD4D0 /* ACEditSceneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACEditSceneViewController.m; path = tabbarTest/plusVC/recorderVC/ACEditSceneViewController.m; sourceTree = SOURCE_ROOT; };
+		5F9701BB1C214249003FD4D0 /* ACEditSceneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ACEditSceneViewController.xib; path = tabbarTest/plusVC/recorderVC/ACEditSceneViewController.xib; sourceTree = SOURCE_ROOT; };
 		5FA8AC831BF6F963002D887D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ACTabbarViewController.xib; sourceTree = "<group>"; };
 		5FA8AC871BF705A8002D887D /* ACMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMeViewController.h; sourceTree = "<group>"; };
 		5FA8AC881BF705A8002D887D /* ACMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACMeViewController.m; sourceTree = "<group>"; };
@@ -215,6 +247,15 @@
 		5FA8AC961BF72139002D887D /* ACFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACFriendsViewController.h; sourceTree = "<group>"; };
 		5FA8AC971BF72139002D887D /* ACFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACFriendsViewController.m; sourceTree = "<group>"; };
 		5FA8AC981BF72139002D887D /* ACFriendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACFriendsViewController.xib; sourceTree = "<group>"; };
+		5FAAD3611C14271800F93088 /* ACDrawFaceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACDrawFaceFilter.h; path = meVC/myProfileVC/ACDrawFaceFilter.h; sourceTree = "<group>"; };
+		5FAAD3621C14271800F93088 /* ACDrawFaceFilter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ACDrawFaceFilter.mm; path = meVC/myProfileVC/ACDrawFaceFilter.mm; sourceTree = "<group>"; };
+		5FAAD3671C1429FA00F93088 /* ACFaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACFaceManager.h; sourceTree = "<group>"; };
+		5FAAD3681C1429FA00F93088 /* ACFaceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACFaceManager.m; sourceTree = "<group>"; };
+		5FAAD36F1C142E2F00F93088 /* ACImageConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACImageConverter.h; sourceTree = "<group>"; };
+		5FAAD3701C142E2F00F93088 /* ACImageConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ACImageConverter.mm; sourceTree = "<group>"; };
+		5FAAD3721C14317900F93088 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		5FAAD3741C14318200F93088 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		5FAAD38D1C191FF600F93088 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		5FD217311C0C20690038F4CA /* shape-detect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "shape-detect.cpp"; path = "tools/opencv/shape-detect.cpp"; sourceTree = "<group>"; };
 		5FD217321C0C20690038F4CA /* shape-detect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = "shape-detect.hpp"; path = "tools/opencv/shape-detect.hpp"; sourceTree = "<group>"; };
 		5FD217341C0C20BB0038F4CA /* CCParams-NSDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CCParams-NSDictionary.m"; path = "tools/CCParams-NSDictionary.m"; sourceTree = "<group>"; };
@@ -368,8 +409,6 @@
 		5FD219781C0C96F80038F4CA /* FaceppError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppError.m; sourceTree = "<group>"; };
 		5FD219791C0C96F80038F4CA /* FaceppResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppResult.h; sourceTree = "<group>"; };
 		5FD2197A1C0C96F80038F4CA /* FaceppResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppResult.m; sourceTree = "<group>"; };
-		5FD219891C0C97F90038F4CA /* UMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMTableViewCell.h; sourceTree = "<group>"; };
-		5FD2198A1C0C97F90038F4CA /* UMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMTableViewCell.m; sourceTree = "<group>"; };
 		5FD2198F1C0C9B2C0038F4CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ACMessageViewController.xib; sourceTree = "<group>"; };
 		5FD219921C0C9D340038F4CA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FD219951C0C9D990038F4CA /* UIImageView+PlayGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+PlayGIF.h"; sourceTree = "<group>"; };
@@ -432,6 +471,12 @@
 		5FD219F41C0D68440038F4CA /* ACSLM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACSLM.h; sourceTree = "<group>"; };
 		5FD219F51C0D68440038F4CA /* ACSLM_1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ACSLM_1.cpp; sourceTree = "<group>"; };
 		5FD219F61C0D68440038F4CA /* ACSLM_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ACSLM_2.cpp; sourceTree = "<group>"; };
+		5FD21A031C0D6E030038F4CA /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		5FD21A041C0D6E030038F4CA /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
+		5FD21A051C0D6E030038F4CA /* UIViewController+Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Record.h"; sourceTree = "<group>"; };
+		5FD21A061C0D6E030038F4CA /* UIViewController+Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Record.m"; sourceTree = "<group>"; };
+		5FD21A071C0D6E030038F4CA /* VOVCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOVCManager.h; sourceTree = "<group>"; };
+		5FD21A081C0D6E030038F4CA /* VOVCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOVCManager.m; sourceTree = "<group>"; };
 		5FD5E9DB1BF9B65700D58582 /* ACMyCharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACMyCharacterViewController.h; path = meVC/myProfileVC/ACMyCharacterViewController.h; sourceTree = "<group>"; };
 		5FD5E9DC1BF9B65700D58582 /* ACMyCharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACMyCharacterViewController.m; path = meVC/myProfileVC/ACMyCharacterViewController.m; sourceTree = "<group>"; };
 		5FD5E9DD1BF9B65700D58582 /* ACMyCharacterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ACMyCharacterViewController.xib; path = meVC/myProfileVC/ACMyCharacterViewController.xib; sourceTree = "<group>"; };
@@ -444,7 +489,6 @@
 		5FD5E9EB1BF9CCC300D58582 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		5FD5E9EC1BF9CCC300D58582 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
 		5FD5E9ED1BF9CCC300D58582 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
-		5FD5E9FA1BF9E72F00D58582 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		5FD5EABB1BF9EA1600D58582 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		5FD5EABD1BF9EA4900D58582 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		5FD5EABF1BF9EA5500D58582 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
@@ -463,15 +507,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FAAD3751C14318200F93088 /* OpenAL.framework in Frameworks */,
+				5FAAD3731C14317900F93088 /* OpenGLES.framework in Frameworks */,
 				5FD5EAC21BF9EA7E00D58582 /* GLKit.framework in Frameworks */,
 				5FD5EABE1BF9EA4900D58582 /* Metal.framework in Frameworks */,
 				5FD5EABC1BF9EA1600D58582 /* AVFoundation.framework in Frameworks */,
-				5FD5E9FB1BF9E72F00D58582 /* opencv2.framework in Frameworks */,
 				0AABD6441737925F009E541D /* UIKit.framework in Frameworks */,
 				5FD5EB221BF9F34C00D58582 /* libSCRecorder.a in Frameworks */,
 				0AABD6461737925F009E541D /* Foundation.framework in Frameworks */,
 				0AABD6481737925F009E541D /* CoreGraphics.framework in Frameworks */,
 				D26989A8D7A01D38399A9DC6 /* libPods.a in Frameworks */,
+				5FAAD38E1C191FF600F93088 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,13 +546,15 @@
 		0AABD6421737925F009E541D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5FAAD38D1C191FF600F93088 /* opencv2.framework */,
+				5FAAD3741C14318200F93088 /* OpenAL.framework */,
+				5FAAD3721C14317900F93088 /* OpenGLES.framework */,
 				5FD5EB211BF9F34C00D58582 /* libSCRecorder.a */,
 				5FD5EB1F1BF9F31100D58582 /* SCRecorder.framework */,
 				5FD5EAC11BF9EA7E00D58582 /* GLKit.framework */,
 				5FD5EABF1BF9EA5500D58582 /* MetalKit.framework */,
 				5FD5EABD1BF9EA4900D58582 /* Metal.framework */,
 				5FD5EABB1BF9EA1600D58582 /* AVFoundation.framework */,
-				5FD5E9FA1BF9E72F00D58582 /* opencv2.framework */,
 				0AABD6431737925F009E541D /* UIKit.framework */,
 				0AABD6451737925F009E541D /* Foundation.framework */,
 				0AABD6471737925F009E541D /* CoreGraphics.framework */,
@@ -565,7 +613,10 @@
 		5F2151F61BF74EF300511337 /* tools */ = {
 			isa = PBXGroup;
 			children = (
-				5FD219E31C0D68440038F4CA /* src */,
+				5FAAD36E1C142E2F00F93088 /* ImageTools */,
+				5FAAD3661C1429E000F93088 /* FaceManager */,
+				5FD21A221C0DE0920038F4CA /* other */,
+				5FD219E31C0D68440038F4CA /* core */,
 				5FD219941C0C9D990038F4CA /* UIImageView-PlayGIF */,
 				5FD219911C0C9D340038F4CA /* LocationManagerFramework */,
 				5FD219601C0C96F80038F4CA /* FaceppSDK_ARC */,
@@ -574,26 +625,7 @@
 				5FD218511C0C85290038F4CA /* Kache */,
 				5FD217351C0C20BB0038F4CA /* AFNetworking */,
 				5FD217631C0C20BB0038F4CA /* YTKNetwork */,
-				5FD2175F1C0C20BB0038F4CA /* CCParams-NSDictionary.h */,
-				5FD217341C0C20BB0038F4CA /* CCParams-NSDictionary.m */,
-				5FD217601C0C20BB0038F4CA /* CCEnv.h */,
-				5FD217611C0C20BB0038F4CA /* CCEnv.m */,
-				5FD2175E1C0C20BB0038F4CA /* ACNetWorkAPI.h */,
-				5FD217621C0C20BB0038F4CA /* ACNetWorkAPI.m */,
-				5FD217761C0C20BB0038F4CA /* CCMD5.h */,
-				5FD217771C0C20BB0038F4CA /* CCMD5.m */,
-				5FD217781C0C20BB0038F4CA /* CCSucessMessage.h */,
-				5FD217791C0C20BB0038F4CA /* CCSucessMessage.m */,
-				5FD2177A1C0C20BB0038F4CA /* CCUserInfoAPI.h */,
-				5FD2177B1C0C20BB0038F4CA /* CCUserInfoAPI.m */,
-				5FD218661C0C858F0038F4CA /* MSCNetworkTypeMonitor.h */,
-				5FD218671C0C858F0038F4CA /* MSCNetworkTypeMonitor.m */,
 				5FD2177C1C0C20BB0038F4CA /* Jastor */,
-				5FD217821C0C20BB0038F4CA /* NSNull+CCExtension.h */,
-				5FD217831C0C20BB0038F4CA /* NSNull+CCExtension.m */,
-				5FD217841C0C20BB0038F4CA /* NSString+CCExtension.h */,
-				5FD217851C0C20BB0038F4CA /* NSString+CCExtension.m */,
-				5FD5E9FC1BF9E74900D58582 /* opencv */,
 				5F2151FC1BF7504700511337 /* viewTools */,
 			);
 			name = tools;
@@ -620,6 +652,7 @@
 		5F2151FC1BF7504700511337 /* viewTools */ = {
 			isa = PBXGroup;
 			children = (
+				5FD21A021C0D6E030038F4CA /* VOVCManager */,
 				5FD2199B1C0C9E2C0038F4CA /* MJRefresh */,
 				5FD219351C0C949C0038F4CA /* SWTableViewCell */,
 				5FD219321C0C94610038F4CA /* ACViewController.m */,
@@ -633,13 +666,7 @@
 		5F2151FD1BF750D100511337 /* vc */ = {
 			isa = PBXGroup;
 			children = (
-				0AABD6521737925F009E541D /* ACTabbarAppDelegate.h */,
-				0AABD6531737925F009E541D /* ACTabbarAppDelegate.m */,
-				0AABD65B1737925F009E541D /* ACTabbarViewController.h */,
-				0AABD65C1737925F009E541D /* ACTabbarViewController.m */,
-				5FA8AC821BF6F963002D887D /* ACTabbarViewController.xib */,
-				0AABD66617379315009E541D /* ACTabBarView.h */,
-				0AABD66717379315009E541D /* ACTabBarView.m */,
+				5FAAD3861C14718D00F93088 /* main */,
 				5FA8AC951BF7211D002D887D /* friendsCV */,
 				5FA8AC941BF7205A002D887D /* discoverVC */,
 				5FA8AC851BF70556002D887D /* meVC */,
@@ -664,6 +691,15 @@
 			isa = PBXGroup;
 			children = (
 				5F727EAE1BF5C3F9001A051C /* touch */,
+				5F9701AD1C21147E003FD4D0 /* ACChatSceneItemCellTableViewCell.h */,
+				5F9701AE1C21147E003FD4D0 /* ACChatSceneItemCellTableViewCell.m */,
+				5F9701AF1C21147E003FD4D0 /* ACChatSceneItemCellTableViewCell.xib */,
+				5F9701B41C214205003FD4D0 /* ACRecordASceneViewController.h */,
+				5F9701B51C214205003FD4D0 /* ACRecordASceneViewController.m */,
+				5F9701B61C214205003FD4D0 /* ACRecordASceneViewController.xib */,
+				5F9701B91C214249003FD4D0 /* ACEditSceneViewController.h */,
+				5F9701BA1C214249003FD4D0 /* ACEditSceneViewController.m */,
+				5F9701BB1C214249003FD4D0 /* ACEditSceneViewController.xib */,
 			);
 			name = recorderVC;
 			path = ../recorderVC;
@@ -685,6 +721,9 @@
 				5FD219901C0C9B2C0038F4CA /* ACMessageViewController.xib */,
 				5FD217AE1C0C221E0038F4CA /* ACLiveAPI.h */,
 				5FD217AF1C0C221E0038F4CA /* ACLiveAPI.m */,
+				5F97011E1C2013CC003FD4D0 /* ACMessageTableViewCell.h */,
+				5F97011F1C2013CC003FD4D0 /* ACMessageTableViewCell.m */,
+				5F9701201C2013CC003FD4D0 /* ACMessageTableViewCell.xib */,
 			);
 			name = messageVC;
 			sourceTree = "<group>";
@@ -716,9 +755,11 @@
 		5FA8AC911BF70C89002D887D /* recorderVC */ = {
 			isa = PBXGroup;
 			children = (
+				5FA8AC921BF70C94002D887D /* touch */,
 				5FD5EB231BFA13F800D58582 /* SCRecordSessionManager.h */,
 				5FD5EB241BFA13F800D58582 /* SCRecordSessionManager.m */,
-				5FA8AC921BF70C94002D887D /* touch */,
+				5FAAD3611C14271800F93088 /* ACDrawFaceFilter.h */,
+				5FAAD3621C14271800F93088 /* ACDrawFaceFilter.mm */,
 			);
 			name = recorderVC;
 			sourceTree = "<group>";
@@ -748,8 +789,46 @@
 				5FA8AC961BF72139002D887D /* ACFriendsViewController.h */,
 				5FA8AC971BF72139002D887D /* ACFriendsViewController.m */,
 				5FA8AC981BF72139002D887D /* ACFriendsViewController.xib */,
+				5F9701261C2017FD003FD4D0 /* ACFriendsTableViewCell.h */,
+				5F9701271C2017FD003FD4D0 /* ACFriendsTableViewCell.m */,
+				5F9701281C2017FD003FD4D0 /* ACFriendsTableViewCell.xib */,
 			);
 			name = friendsCV;
+			sourceTree = "<group>";
+		};
+		5FAAD3661C1429E000F93088 /* FaceManager */ = {
+			isa = PBXGroup;
+			children = (
+				5FAAD3671C1429FA00F93088 /* ACFaceManager.h */,
+				5FAAD3681C1429FA00F93088 /* ACFaceManager.m */,
+			);
+			name = FaceManager;
+			path = tools/FaceManager;
+			sourceTree = "<group>";
+		};
+		5FAAD36E1C142E2F00F93088 /* ImageTools */ = {
+			isa = PBXGroup;
+			children = (
+				5FD5E9FC1BF9E74900D58582 /* opencv */,
+				5FAAD36F1C142E2F00F93088 /* ACImageConverter.h */,
+				5FAAD3701C142E2F00F93088 /* ACImageConverter.mm */,
+			);
+			name = ImageTools;
+			path = tools/ImageTools;
+			sourceTree = "<group>";
+		};
+		5FAAD3861C14718D00F93088 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				0AABD6521737925F009E541D /* ACTabbarAppDelegate.h */,
+				0AABD6531737925F009E541D /* ACTabbarAppDelegate.m */,
+				0AABD65B1737925F009E541D /* ACTabbarViewController.h */,
+				0AABD65C1737925F009E541D /* ACTabbarViewController.m */,
+				5FA8AC821BF6F963002D887D /* ACTabbarViewController.xib */,
+				0AABD66617379315009E541D /* ACTabBarView.h */,
+				0AABD66717379315009E541D /* ACTabBarView.m */,
+			);
+			name = main;
 			sourceTree = "<group>";
 		};
 		5FD217351C0C20BB0038F4CA /* AFNetworking */ = {
@@ -900,8 +979,6 @@
 		5FD219351C0C949C0038F4CA /* SWTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				5FD219891C0C97F90038F4CA /* UMTableViewCell.h */,
-				5FD2198A1C0C97F90038F4CA /* UMTableViewCell.m */,
 				5FD219361C0C949C0038F4CA /* Constants.h */,
 				5FD219371C0C949C0038F4CA /* NSMutableArray+SWUtilityButtons.h */,
 				5FD219381C0C949C0038F4CA /* NSMutableArray+SWUtilityButtons.m */,
@@ -1099,7 +1176,7 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
-		5FD219E31C0D68440038F4CA /* src */ = {
+		5FD219E31C0D68440038F4CA /* core */ = {
 			isa = PBXGroup;
 			children = (
 				5FD219E41C0D68440038F4CA /* ACCamera.cpp */,
@@ -1120,7 +1197,7 @@
 				5FD219F71C0D68440038F4CA /* module */,
 				5FD219F81C0D68440038F4CA /* tools */,
 			);
-			name = src;
+			name = core;
 			path = ../acow/src;
 			sourceTree = "<group>";
 		};
@@ -1149,6 +1226,44 @@
 			path = tools;
 			sourceTree = "<group>";
 		};
+		5FD21A021C0D6E030038F4CA /* VOVCManager */ = {
+			isa = PBXGroup;
+			children = (
+				5FD21A031C0D6E030038F4CA /* NSObject+Runtime.h */,
+				5FD21A041C0D6E030038F4CA /* NSObject+Runtime.m */,
+				5FD21A051C0D6E030038F4CA /* UIViewController+Record.h */,
+				5FD21A061C0D6E030038F4CA /* UIViewController+Record.m */,
+				5FD21A071C0D6E030038F4CA /* VOVCManager.h */,
+				5FD21A081C0D6E030038F4CA /* VOVCManager.m */,
+			);
+			path = VOVCManager;
+			sourceTree = "<group>";
+		};
+		5FD21A221C0DE0920038F4CA /* other */ = {
+			isa = PBXGroup;
+			children = (
+				5FD2175F1C0C20BB0038F4CA /* CCParams-NSDictionary.h */,
+				5FD217341C0C20BB0038F4CA /* CCParams-NSDictionary.m */,
+				5FD217601C0C20BB0038F4CA /* CCEnv.h */,
+				5FD217611C0C20BB0038F4CA /* CCEnv.m */,
+				5FD2175E1C0C20BB0038F4CA /* ACNetWorkAPI.h */,
+				5FD217621C0C20BB0038F4CA /* ACNetWorkAPI.m */,
+				5FD217761C0C20BB0038F4CA /* CCMD5.h */,
+				5FD217771C0C20BB0038F4CA /* CCMD5.m */,
+				5FD217781C0C20BB0038F4CA /* CCSucessMessage.h */,
+				5FD217791C0C20BB0038F4CA /* CCSucessMessage.m */,
+				5FD2177A1C0C20BB0038F4CA /* CCUserInfoAPI.h */,
+				5FD2177B1C0C20BB0038F4CA /* CCUserInfoAPI.m */,
+				5FD218661C0C858F0038F4CA /* MSCNetworkTypeMonitor.h */,
+				5FD218671C0C858F0038F4CA /* MSCNetworkTypeMonitor.m */,
+				5FD217821C0C20BB0038F4CA /* NSNull+CCExtension.h */,
+				5FD217831C0C20BB0038F4CA /* NSNull+CCExtension.m */,
+				5FD217841C0C20BB0038F4CA /* NSString+CCExtension.h */,
+				5FD217851C0C20BB0038F4CA /* NSString+CCExtension.m */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
 		5FD5E9E71BF9CCC300D58582 /* Run Cycle 1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1169,6 +1284,7 @@
 				5FD217321C0C20690038F4CA /* shape-detect.hpp */,
 			);
 			name = opencv;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		D218370A8DB45C13DDC2D760 /* Pods */ = {
@@ -1212,6 +1328,11 @@
 				CLASSPREFIX = AC;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = liuqiang;
+				TargetAttributes = {
+					0AABD63F1737925F009E541D = {
+						DevelopmentTeam = 85VDM5KUWQ;
+					};
+				};
 			};
 			buildConfigurationList = 0AABD63B1737925E009E541D /* Build configuration list for PBXProject "actest" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1256,23 +1377,28 @@
 				0AABD6761737949E009E541D /* tabbar_0.png in Resources */,
 				5F727DD51BF58F2A001A051C /* ACPlusViewController.xib in Resources */,
 				0AABD6771737949E009E541D /* tabbar_0@2x.png in Resources */,
+				5F9701B11C21147E003FD4D0 /* ACChatSceneItemCellTableViewCell.xib in Resources */,
 				0AABD6781737949E009E541D /* tabbar_1.png in Resources */,
 				5FD5E9F31BF9CCC300D58582 /* 6.png in Resources */,
+				5F97012A1C2017FD003FD4D0 /* ACFriendsTableViewCell.xib in Resources */,
 				0AABD6791737949E009E541D /* tabbar_1@2x.png in Resources */,
 				0AABD67A1737949E009E541D /* tabbar_3.png in Resources */,
 				5FD5E9EF1BF9CCC300D58582 /* 2.png in Resources */,
 				5FD5E9DF1BF9B65700D58582 /* ACMyCharacterViewController.xib in Resources */,
 				0AABD67B1737949E009E541D /* tabbar_3@2x.png in Resources */,
 				0AABD67C1737949E009E541D /* tabbar_4.png in Resources */,
+				5F9701BD1C214249003FD4D0 /* ACEditSceneViewController.xib in Resources */,
 				5FD5E9F01BF9CCC300D58582 /* 3.png in Resources */,
 				5FD5E9F11BF9CCC300D58582 /* 4.png in Resources */,
 				5FD5E9F21BF9CCC300D58582 /* 5.png in Resources */,
+				5F9701B81C214205003FD4D0 /* ACRecordASceneViewController.xib in Resources */,
 				0AABD67D1737949E009E541D /* tabbar_4@2x.png in Resources */,
 				0AABD67E1737949E009E541D /* tabbar_mainbtn.png in Resources */,
 				0AABD67F1737949E009E541D /* tabbar_mainbtn@2x.png in Resources */,
 				0AABD6801737949E009E541D /* tabbar_mainbtn_bg.png in Resources */,
 				0AABD6811737949E009E541D /* tabbar_mainbtn_bg@2x.png in Resources */,
 				5FD2198E1C0C9B2C0038F4CA /* ACMessageViewController.xib in Resources */,
+				5F9701221C2013CC003FD4D0 /* ACMessageTableViewCell.xib in Resources */,
 				0AABD68B1737B04C009E541D /* ACDiscoverViewController.xib in Resources */,
 				5FD5E9E51BF9C4E500D58582 /* touchRecorder.png in Resources */,
 				5FD219D61C0C9E2C0038F4CA /* MJRefresh.bundle in Resources */,
@@ -1348,8 +1474,10 @@
 				5FD219D81C0C9E2C0038F4CA /* UIScrollView+MJExtension.m in Sources */,
 				5FD219DA1C0C9E2C0038F4CA /* UIView+MJExtension.m in Sources */,
 				5FD217891C0C20BB0038F4CA /* AFHTTPRequestOperationManager.m in Sources */,
+				5F9701291C2017FD003FD4D0 /* ACFriendsTableViewCell.m in Sources */,
 				5FD219FC1C0D68440038F4CA /* ACGradientTest.cpp in Sources */,
 				5FD219CA1C0C9E2C0038F4CA /* MJRefreshComponent.m in Sources */,
+				5FD21A0A1C0D6E030038F4CA /* UIViewController+Record.m in Sources */,
 				5FD218631C0C85290038F4CA /* KPool.m in Sources */,
 				5FD217A21C0C20BB0038F4CA /* YTKNetworkPrivate.m in Sources */,
 				5FD21A011C0D68440038F4CA /* ACSLM_2.cpp in Sources */,
@@ -1364,10 +1492,14 @@
 				5FD2197B1C0C96F80038F4CA /* FaceppAPI.m in Sources */,
 				5FD2195B1C0C964E0038F4CA /* OpenShare+QQ.m in Sources */,
 				0AABD6501737925F009E541D /* main.m in Sources */,
+				5FD21A091C0D6E030038F4CA /* NSObject+Runtime.m in Sources */,
 				5F727DD41BF58F2A001A051C /* ACPlusViewController.m in Sources */,
+				5F9701BC1C214249003FD4D0 /* ACEditSceneViewController.m in Sources */,
 				5FD219451C0C949C0038F4CA /* SWLongPressGestureRecognizer.m in Sources */,
+				5FAAD3691C1429FA00F93088 /* ACFaceManager.m in Sources */,
 				5FD217861C0C20BB0038F4CA /* CCParams-NSDictionary.m in Sources */,
 				5FD217941C0C20BB0038F4CA /* UIButton+AFNetworking.m in Sources */,
+				5F9701B71C214205003FD4D0 /* ACRecordASceneViewController.m in Sources */,
 				5FD217B01C0C221E0038F4CA /* ACLiveAPI.m in Sources */,
 				5FD219801C0C96F80038F4CA /* FaceppGrouping.m in Sources */,
 				5FD217A81C0C20BB0038F4CA /* JastorRuntimeHelper.m in Sources */,
@@ -1383,7 +1515,6 @@
 				5FD219D91C0C9E2C0038F4CA /* UIScrollView+MJRefresh.m in Sources */,
 				5FD219D21C0C9E2C0038F4CA /* MJRefreshBackStateFooter.m in Sources */,
 				5FD219821C0C96F80038F4CA /* FaceppPerson.m in Sources */,
-				5FD2198B1C0C97F90038F4CA /* UMTableViewCell.m in Sources */,
 				5FD2195A1C0C964E0038F4CA /* OpenShare+Alipay.m in Sources */,
 				5FD219991C0C9D990038F4CA /* UIImageView+PlayGIF.m in Sources */,
 				5FD217961C0C20BB0038F4CA /* UIProgressView+AFNetworking.m in Sources */,
@@ -1396,6 +1527,7 @@
 				5FD218651C0C85290038F4CA /* KUtil.m in Sources */,
 				0AABD66817379315009E541D /* ACTabBarView.m in Sources */,
 				5FD219D01C0C9E2C0038F4CA /* MJRefreshBackGifFooter.m in Sources */,
+				5FAAD3711C142E2F00F93088 /* ACImageConverter.mm in Sources */,
 				5FD217981C0C20BB0038F4CA /* UIWebView+AFNetworking.m in Sources */,
 				5FD2179D1C0C20BB0038F4CA /* YTKBatchRequestAgent.m in Sources */,
 				5FD2197E1C0C96F80038F4CA /* FaceppFaceset.m in Sources */,
@@ -1404,18 +1536,21 @@
 				5FD219861C0C96F80038F4CA /* FaceppResult.m in Sources */,
 				5FD219431C0C949C0038F4CA /* NSMutableArray+SWUtilityButtons.m in Sources */,
 				5FD219811C0C96F80038F4CA /* FaceppInfo.m in Sources */,
+				5F9701B01C21147E003FD4D0 /* ACChatSceneItemCellTableViewCell.m in Sources */,
 				5FD21A001C0D68440038F4CA /* ACSLM_1.cpp in Sources */,
 				5FD2178A1C0C20BB0038F4CA /* AFHTTPSessionManager.m in Sources */,
 				5FD2195F1C0C964E0038F4CA /* OpenShare.m in Sources */,
 				5FD217331C0C20690038F4CA /* shape-detect.cpp in Sources */,
 				0AABD6851737B034009E541D /* ACMessageViewController.m in Sources */,
 				5FD217A91C0C20BB0038F4CA /* NSNull+CCExtension.m in Sources */,
+				5FD21A0B1C0D6E030038F4CA /* VOVCManager.m in Sources */,
 				5FD2195C1C0C964E0038F4CA /* OpenShare+Renren.m in Sources */,
 				5FD2178D1C0C20BB0038F4CA /* AFURLConnectionOperation.m in Sources */,
 				5FD219D51C0C9E2C0038F4CA /* MJRefreshStateHeader.m in Sources */,
 				5FD2178E1C0C20BB0038F4CA /* AFURLRequestSerialization.m in Sources */,
 				5FD217A01C0C20BB0038F4CA /* YTKNetworkAgent.m in Sources */,
 				5FD217901C0C20BB0038F4CA /* AFURLSessionManager.m in Sources */,
+				5FAAD3631C14271800F93088 /* ACDrawFaceFilter.mm in Sources */,
 				5FD219CB1C0C9E2C0038F4CA /* MJRefreshFooter.m in Sources */,
 				5FD219D11C0C9E2C0038F4CA /* MJRefreshBackNormalFooter.m in Sources */,
 				5FD2178F1C0C20BB0038F4CA /* AFURLResponseSerialization.m in Sources */,
@@ -1423,6 +1558,7 @@
 				5FD217971C0C20BB0038F4CA /* UIRefreshControl+AFNetworking.m in Sources */,
 				5FA8AC8A1BF705A8002D887D /* ACMeViewController.m in Sources */,
 				5FD217921C0C20BB0038F4CA /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				5F9701211C2013CC003FD4D0 /* ACMessageTableViewCell.m in Sources */,
 				5FD5EB251BFA13F800D58582 /* SCRecordSessionManager.m in Sources */,
 				5FD217931C0C20BB0038F4CA /* UIAlertView+AFNetworking.m in Sources */,
 				5FD219C81C0C9E2C0038F4CA /* MJRefreshAutoFooter.m in Sources */,
@@ -1548,10 +1684,13 @@
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods/OpenCV",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tabbarTest/actest-Prefix.pch";
@@ -1563,9 +1702,10 @@
 					"\"${PODS_ROOT}/Headers/Public/MMProgressHUD\"",
 				);
 				INFOPLIST_FILE = "tabbarTest/actest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.tabbarTest;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acow.woca;
 				PRODUCT_NAME = actest;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1576,10 +1716,13 @@
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods/OpenCV",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tabbarTest/actest-Prefix.pch";
@@ -1591,9 +1734,10 @@
 					"\"${PODS_ROOT}/Headers/Public/MMProgressHUD\"",
 				);
 				INFOPLIST_FILE = "tabbarTest/actest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.tabbarTest;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acow.woca;
 				PRODUCT_NAME = actest;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
